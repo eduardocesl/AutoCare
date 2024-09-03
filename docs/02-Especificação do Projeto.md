@@ -83,6 +83,46 @@ Os fatores apresentados na tabela a seguir tratam dos processos que restringem o
 | **RE-04** | O desenvolvimento do aplicativo deve estar em conformidade com as regulamentações de privacidade e proteção de dados - LGPD (Lei Geral de Proteção de Dados) no Brasil. |
 
 
+## Matriz de Rastreabilidade
+
+|            | RF-01 | RF-02 | RF-03 | RF-04 | RF-05 | RF-06 | RF-07 | RF-08 | RF-09 | RNF-01 | RNF-02 | RNF-03 | RNF-04 | RNF-05 | RNF-06 |
+|------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|--------|--------|--------|--------|--------|
+| **RF-01**  |       | ✔️    |       |       |       |       |       |       |       | ✔️     | ✔️     |        | ✔️     |        |        |
+| **RF-02**  |       |       | ✔️    |       | ✔️    | ✔️    | ✔️    | ✔️    | ✔️    | ✔️     | ✔️     |        |        |        | ✔️     |
+| **RF-03**  |       |       |       |       |       |       |       |       |       | ✔️     | ✔️     |        | ✔️     | ✔️     |        |
+| **RF-04**  |       |       |       |       |       |       |       |       |       | ✔️     |        |        |        |        |        |
+| **RF-05**  |       |       |       |       |       |       |       |       | ✔️    | ✔️     |        |        | ✔️     | ✔️     | ✔️     |
+| **RF-06**  |       |       |       |       |       |       | ✔️    |       | ✔️    | ✔️     | ✔️     |        | ✔️     | ✔️     |        |
+| **RF-07**  |       |       |       |       |       |       |       |       |       | ✔️     | ✔️     |        |        | ✔️     | ✔️     |
+| **RF-08**  |       |       |       |       |       |       |       |       |       | ✔️     | ✔️     |        | ✔️     | ✔️     |        |
+| **RF-09**  |       |       |       |       |       |       |       |       |       | ✔️     |        |        |        | ✔️     | ✔️     |
+| **RNF-01** |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |
+| **RNF-02** |       |       |       |       |       |       |       |       |       | ✔️     |        |        |        |        |        |
+| **RNF-03** |       |       |       |       |       |       |       |       |       |        |        |        |        |        | ✔️     |
+| **RNF-04** |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |
+| **RNF-05** |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |
+| **RNF-06** |       |       |       |       |       |       |       |       |       |        |        | ✔️     |        |        |        |
+| **EDUARDO**| ✔️    | ✔️    | ✔️    | ✔️    | ✔️    |       |       |       |       | ✔️     | ✔️     | ✔️     | ✔️     | ✔️     | ✔️     |
+| **LAÍS**   |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |
+| **LUCAS**  |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |
+| **MARCO A.**|       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |
+| **MATHEUS**|       |       |       |       |       | ✔️    | ✔️    | ✔️    | ✔️    |        |        |        |        |        |        |
+
+
+## Indicadores de Desempenho
+
+| **INDICADOR**                | **OBJETIVOS**                                         | **DESCRIÇÃO**                                           | **CÁLCULO**                             | **FONTE DADOS**                              | **PERSPECTIVA**                              |
+|------------------------------|-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------|----------------------------------------------|----------------------------------------------|
+| Número de downloads realizados | Medir o nível de interesse gerado pelo aplicativo    | Quantidade de downloads realizados na loja eletrônica  | Somatório total de downloads            | Loja eletrônica                              | Nível de satisfação                          |
+| Número de usuários ativos    | Avaliar a adesão e uso contínuo do aplicativo         | Número de usuários que utilizam o aplicativo regularmente | Contagem de usuários ativos             | Banco de dados da aplicação                  | Engajamento                                  |
+| Nota média do aplicativo     | Analisar a satisfação geral dos usuários              | Média das notas atribuídas pelos usuários nas lojas eletrônicas | Média das notas                           | Loja eletrônica                              | Aprimoramento                                |
+| Taxa de retenção de usuários | Verificar a fidelidade dos usuários                    | Percentual de usuários que continuam a usar o aplicativo após um período definido | Percentual de usuários retidos            | Banco de dados da aplicação                  | Retenção                                     |
+| Reclamações                  | Verificar quais os principais pontos negativos do aplicativo | Entender e atuar sobre as reclamações apresentadas pelos usuários | Quantidade e qualidade das reclamações | Loja eletrônica e canais de comunicação do AutoCare | Aprimorar os pontos negativos da aplicação   |
+| Elogios                      | Verificar quais os principais pontos positivos do aplicativo | Entender e potencializar as qualidades da aplicação apresentadas pelos usuários | Quantidade e qualidade dos elogios      | Loja eletrônica e canais de comunicação do AutoCare | Potencializar as funcionalidades valorizadas pelos usuários |
+| Periodicidade de acessos     | Analisar o tempo de inatividade dos usuários           | Entender os padrões de acesso da aplicação             | Média de tempo entre acessos do usuário | Banco de dados da aplicação                  | Aprimoramento e melhoria de engajamento da aplicação |
+| Taxa de erro de funcionalidades | Medir a confiabilidade das funcionalidades do aplicativo | Percentual de erros reportados em funcionalidades do aplicativo | Percentual de erros                      | Banco de dados da aplicação                  | Qualidade e confiabilidade                    |
+
+
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
