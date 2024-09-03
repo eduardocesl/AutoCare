@@ -83,12 +83,3 @@ Além disso, o AutoCare também promove a conscientização sobre a importância
 | **Público com baixa experiência em manutenção veicular** | Novos motoristas ou pessoas que não têm muito conhecimento sobre manutenção de veículos.               |
 | **Famílias com múltiplos veículos**        | Famílias que possuem mais de um carro e precisam manter todos em bom estado de funcionamento.         |
 
-
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
