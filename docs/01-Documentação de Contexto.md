@@ -1,4 +1,4 @@
-# Introdução
+# Introdução <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 50>
 
 O AutoCare é um aplicativo projetado para ajudar proprietários de veículos a gerenciar a manutenção e monitorar o desempenho de seus automóveis. A aplicação oferece funcionalidades para registrar e acompanhar manutenções, abastecimentos, e outros aspectos importantes relacionados à gestão do veículo.
 
