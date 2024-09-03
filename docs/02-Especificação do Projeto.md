@@ -42,52 +42,46 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas a seguir, apresentam os requisitos funcionais e não funcionais da aplicação, além da definição de seu nível de prioridade classificados em: alta, média ou baixa prioridade:
 
-<strong>Crie no mínimo 12 Requisitos funcionais, 6 não funcionais e 3 restrições</strong
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| Código (ID)  | Requisito                                                                                                       | Prioridade |
+|---------|----------------------------------------------------------------------------------------------------------------|------------|
+| **RF-01** | A aplicação deve permitir que o usuário faça um cadastro com login e senha.                                    | Alta       |
+| **RF-02** | A aplicação deve permitir login e logout para uma experiência personalizada e individualizada pelo usuário.    | Alta       |
+| **RF-03** | A aplicação deve permitir o gerenciamento de perfis (permitir que os usuários atualizem suas informações de endereço, número de telefone, foto, etc.). | Baixa      |
+| **RF-04** | A aplicação deve permitir que o usuário opte pelo “Dark Mode” ou “Light Mode”.                                 | Baixa      |
+| **RF-05** | O sistema deve permitir que os usuários registrem e acompanhem todas as manutenções realizadas nos veículos, incluindo data, tipo de serviço, quilometragem, e custos envolvidos. | Alta       |
+| **RF-06** | O sistema deve permitir que os usuários adicionem e gerenciem múltiplos veículos em uma única conta.            | Média      |
+| **RF-07** | A aplicação deve conter um cadastro de motoristas, com informações pessoais e históricos de conduções anteriores. | Baixa      |
+| **RF-08** | O sistema deve permitir o registro de abastecimentos com informações de data, quantidade de Lts e tipo de combustível. | Média      |
+| **RF-09** | O sistema deve calcular o custo médio do veículo, usando informações como consumo, manutenção e afins.         | Baixa      |
+
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| Código (ID) | Descrição                                                                                                                                                           | Prioridade |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **RNF-01**  | O sistema deve oferecer uma interface intuitiva e fácil de usar, com navegação clara e acessível, permitindo que usuários de diferentes níveis de conhecimento tecnológico possam utilizar o aplicativo sem dificuldades. | Alta       |
+| **RNF-02**  | A aplicação deve ser responsiva e adequada a qualquer sistema de acesso (Desktop, Smartphone ou Tablet).                                                             | Alta       |
+| **RNF-03**  | O sistema deve garantir fácil manutenibilidade.                                                                                                                     | Média      |
+| **RNF-04**  | O sistema deve garantir que todas as informações dos usuários, incluindo dados de veículos, sejam protegidas.                                                        | Alta       |
+| **RNF-05**  | O sistema deve ser capaz de processar e armazenar os dados, garantindo que o tempo de resposta seja rápido mesmo com grandes volumes de dados.                        | Alta       |
+| **RNF-06**  | O sistema deve ser altamente disponível, com um tempo de inatividade mínimo, garantindo que os usuários possam acessar e utilizar o aplicativo a qualquer momento, com backups regulares para evitar perda de dados. | Alta       |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+Os fatores apresentados na tabela a seguir tratam dos processos que restringem o desenvolvimento da plataforma:
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+| Código (ID)       | Descrição                                                                                                                     |
+|----------|--------------------------------------------------------------------------------------------------------------------------------|
+| **RE-01** | A Etapa 1 da aplicação tem como prazo de entrega a data: 01/09/2024.                                                          |
+| **RE-02** | A equipe não pode contratar, nem delegar funções a terceiros.                                                                 |
+| **RE-03** | Algumas funcionalidades do aplicativo, como o armazenamento em nuvem de documentos e a sincronização de dados, exigirão uma conexão ativa com a internet. |
+| **RE-04** | O desenvolvimento do aplicativo deve estar em conformidade com as regulamentações de privacidade e proteção de dados - LGPD (Lei Geral de Proteção de Dados) no Brasil. |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
