@@ -1,4 +1,4 @@
-# AutoCare 
+# AutoCare <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 50>
 
 `Análise e Desvolvimento de Sistemas`
 
@@ -16,6 +16,7 @@
   
   O AutoCare é o parceiro ideal para garantir que seu veículo esteja sempre em perfeitas condições.
 
+
 ## Integrantes
 
 * Carlos Eduardo Dos Santos Lima
@@ -26,7 +27,7 @@
 
 ## Orientador
 
-* Nome completo do professor 1
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
