@@ -1,21 +1,28 @@
-# TÍTULO DO PROJETO
+# AutoCare 
 
-`CURSO`
+`Análise e Desvolvimento de Sistemas`
 
-`DISCIPLINA`
+`EIXO 4 - PROJETO - DESENVOLVIMENTO DE UMA APLICAÇÃO DISTRIBUÍDA - TURMA 3`
 
-`SEMESTRE`
+`2024/2`
+<div align='center'>
+<img src=https://github.com/user-attachments/assets/a0c91eb6-04d0-4edc-a00d-f60d46651896 height = 350>
+</div>
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+
+**AutoCare**: Gestão Inteligente de Manutenção Automotiva
+
+  O AutoCare é um aplicativo inovador projetado para simplificar a vida dos proprietários de veículos. Com uma interface intuitiva e funcional, o AutoCare permite que os usuários gerenciem todas as necessidades de manutenção e acompanhamento de seus automóveis de maneira prática e eficiente. 
+  
+  O AutoCare é o parceiro ideal para garantir que seu veículo esteja sempre em perfeitas condições.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Carlos Eduardo Dos Santos Lima
+* Lais Barbosa de Oliveira
+* Lucas Oliveira Soares
+* Marco Antonio Gil do Amaral Oliveira
+* Matheus Soares da Silva
 
 ## Orientador
 
