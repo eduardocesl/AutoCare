@@ -46,7 +46,7 @@ As tabelas a seguir, apresentam os requisitos funcionais e não funcionais da ap
 
 ### Requisitos Funcionais
 
-| Código (ID)  | Requisito                                                                                                       | Prioridade |
+| Código (ID)  | Descrição                                                                                                       | Prioridade |
 |---------|----------------------------------------------------------------------------------------------------------------|------------|
 | **RF-01** | A aplicação deve permitir que o usuário faça um cadastro com login e senha.                                    | Alta       |
 | **RF-02** | A aplicação deve permitir login e logout para uma experiência personalizada e individualizada pelo usuário.    | Alta       |
