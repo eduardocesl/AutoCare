@@ -17,15 +17,14 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 Ao criar perfis e histórias de usuários para um aplicativo voltado ao público-alvo descrito acima, foi importante detalhar as necessidades, motivações e comportamentos de cada grupo. Esses perfis (ou personas) ajudam no desenvolvimento de funcionalidades específicas, na personalização da experiência do usuário e na criação de conteúdo relevante. Aqui estão exemplos de perfis: 
 
 
-|João Nogueira |
-|---------------------------|--------------------------------------------------------|
-|Idade: 35 anos             | Segmento: Proprietários individuais de veículo| 
-|Ocupação: gerente de vendas|Veículo: Sedan para uso pessoal e familiar|
-                            |Prioridades: Praticidade.  
 
+|João Nogueira       |                                               |                                           |
+|--------------------|-----------------------------------------------|----------------------------------------   |
+|Idade: 35 anos      |Segmento: Proprietários individuais de veículo | Veicúlo: Sedan para uso pessoal e familiar|               
+|Gerente de vendas   |Prioridades: Praticidade                       | Motivações/objetivos: Familia             |
  
 
-Motivações/objetivos: Familia 
+
 
  
 
