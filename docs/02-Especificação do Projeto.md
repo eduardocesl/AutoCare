@@ -24,63 +24,80 @@ Ao criar perfis e histórias de usuários para um aplicativo voltado ao público
 |Gerente de vendas   |Prioridades: Praticidade                       | Motivações/objetivos: Familia             |
  
 
+|Ana Bugalho         |                                               |                                                           |
+|--------------------|-----------------------------------------------|-----------------------------------------------------------|
+|Idade: 45 anos      |Segmento: Empresas com Frotas de veículos      | Veículo: Frota de 50 caminhões                            |               
+|gerente de operações|Prioridades: maximizar a eficiência da frota   | Motivações/objetivos: Redução de custos                   |                                |empresa logística   |                                               |                                                           |
+
+
+
+|Carlos Munhoz          |                                                 |                                                           |
+|-----------------------|-------------------------------------------------|-----------------------------------------------------------|
+|Idade: 50 anos         |Segmento: Oficinas Mecânicas e Centro Automotivos| Veículo: Veículos de terceiros                            |               
+|Proprietário de Oficina|Prioridades: Serviço ao cliente                  | Motivações/objetivos: Modernizar a gestão do negócio      |
+|mecânica               |                                                 |                                                           |
+                                                                             
+
+ 
+|Maria Julia            |                                     |                                                                  |
+|-----------------------|-------------------------------------|------------------------------------------------------------------|
+|Idade: 29 anos         |Segmento: Motoristas de Aplicativos  | Veículo: Veiculo próprio para trabalha integral 60 horas semanais|               
+|Motorista de aplicativo|Prioridades: Serviço ao cliente      | Motivações/objetivos:Garantir a manutenção e funcionamento       |
+ 
+
+|Pedro Mauricio         |                                                    |                                                            |
+|-----------------------|----------------------------------------------------|------------------------------------------------------------|
+|Idade: 50 anos         |Segmento: Entusiastas e colecionadores de automoveis| Veículo: Pequena coleção de carros raros                   |               
+|Advogado e colecionador|Prioridades:  Restauração de veículos de coleção    | Motivações/objetivos: Manter a manutenção da coleção em dia|
+                                                                             
+
+
+|Fernanda Braga                 |                                                  |                                                            |
+|-------------------------------|--------------------------------------------------|------------------------------------------------------------|
+|Idade: 37 anos                 |Segmento: Oficinas Mecânicas e Centro Automotivos | Veículo: Pequena coleção de carros raros                   |               
+|Gestora de locadora de veículos|Prioridades:  Serviço ao cliente                  | Motivações/objetivos:maximizar a rentabilidade e           |
+|                               |                                                  |garantir a disponibilidade                                  | 
+
+
 
 
  
 
-Ana Bugalho 
+Lucas Emanuel 
 
-Idade: 45 anos 
+Idade: 23 anos 
 
-Segmento: Empresas com Frotas de veículos 
+Segmento: Público com baixa experiência em Manutenção Veicular 
 
-Ocupação:  gerente de operações empresa logística 
+Ocupação: Estagiário 
 
-Veículo: Frota de 50 caminhões  
+Veículo: Primeiro veículo 
 
-Prioridade: maximizar a eficiência da frota e reduzir custos de manutenção. 
-
- 
-
-Motivações/objetivos: Redução de custos 
+Prioridade: Manter o bom estado do veículo 
 
  
 
- 
-
-Carlos Munhoz 
-
-Idade: 50 anos 
-
-Segmento: Oficinas Mecânicas e Centro Automotivos 
-
-Ocupação: Proprietário de Oficina mecânica 
-
-Veiculo: Veiculos de terceiros 
-
-Prioridade: Serviço ao cliente 
+Motivações/objetivos: Aprender sobre manutenção básica 
 
  
 
-Motivações/objetivos: Modernizar a gestão do negócio 
+Claudia Queiroz 
+
+Idade: 57 anos 
+
+Segmento: Família com múltiplos veículos 
+
+Ocupação: Gestão familiar 
+
+Veículo: 3 veículos familiares 
+
+Prioridade: Organização e manutenção 
 
  
 
-Maria Julia 
+Motivações/objetivos: Segurança familiar 
 
-Idade: 29 anos 
 
-Segmento: Motoristas de Aplicativos 
-
-Ocupação: Motorista de aplicativo 
-
-Veiculo: Veiculo próprio para trabalha integral 60 horas semanais 
-
-Prioridade: Serviço ao cliente 
-
- 
-
-Motivações/objetivos: Garantir a manutenção e funcionamento. 
 
 
 
