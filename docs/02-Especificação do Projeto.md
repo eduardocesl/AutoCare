@@ -8,19 +8,82 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+3 - PERSONAS E HISTÓRIAS DE USUÁRIOS 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+ A equipe realizou pesquisas com potenciais usuários da aplicação visando traçar quais problemas o software resolverá. A partir disso, os levantamentos foram compilados na forma de Personas e Histórias de Usuários, conforme apresentado a seguir. 
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+ Personas 
+
+Ao criar perfis e histórias de usuários para um aplicativo voltado ao público-alvo descrito acima, foi importante detalhar as necessidades, motivações e comportamentos de cada grupo. Esses perfis (ou personas) ajudam no desenvolvimento de funcionalidades específicas, na personalização da experiência do usuário e na criação de conteúdo relevante. Aqui estão exemplos de perfis: 
+
+
+|João Nogueira |
+|---------------------------|--------------------------------------------------------|
+|Idade: 35 anos             | Segmento: Proprietários individuais de veículo| 
+|Ocupação: gerente de vendas|Veículo: Sedan para uso pessoal e familiar|
+                            |Prioridades: Praticidade.  
+
+ 
+
+Motivações/objetivos: Familia 
+
+ 
+
+Ana Bugalho 
+
+Idade: 45 anos 
+
+Segmento: Empresas com Frotas de veículos 
+
+Ocupação:  gerente de operações empresa logística 
+
+Veículo: Frota de 50 caminhões  
+
+Prioridade: maximizar a eficiência da frota e reduzir custos de manutenção. 
+
+ 
+
+Motivações/objetivos: Redução de custos 
+
+ 
+
+ 
+
+Carlos Munhoz 
+
+Idade: 50 anos 
+
+Segmento: Oficinas Mecânicas e Centro Automotivos 
+
+Ocupação: Proprietário de Oficina mecânica 
+
+Veiculo: Veiculos de terceiros 
+
+Prioridade: Serviço ao cliente 
+
+ 
+
+Motivações/objetivos: Modernizar a gestão do negócio 
+
+ 
+
+Maria Julia 
+
+Idade: 29 anos 
+
+Segmento: Motoristas de Aplicativos 
+
+Ocupação: Motorista de aplicativo 
+
+Veiculo: Veiculo próprio para trabalha integral 60 horas semanais 
+
+Prioridade: Serviço ao cliente 
+
+ 
+
+Motivações/objetivos: Garantir a manutenção e funcionamento. 
+
+
 
 ## Histórias de Usuários
 
