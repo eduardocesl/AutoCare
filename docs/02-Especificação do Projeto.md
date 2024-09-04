@@ -20,8 +20,8 @@ Ao criar perfis e histórias de usuários para um aplicativo voltado ao público
 
 |João Nogueira       |                                               |                                           |
 |--------------------|-----------------------------------------------|----------------------------------------   |
-|Idade: 35 anos      |Segmento: Proprietários individuais de veículo | Veicúlo: Sedan para uso pessoal e familiar|               
-|Gerente de vendas   |Prioridades: Praticidade                       | Motivações/objetivos: Familia             |
+|Idade: 35 anos      |Segmento: Proprietários individuais de veículo | Veículo: Sedan para uso pessoal e familiar|               
+|Gerente de vendas   |Prioridades: Praticidade                       | Motivações/objetivos: Família             |
  
 
 |Ana Bugalho         |                                               |                                                           |
@@ -56,7 +56,7 @@ Ao criar perfis e histórias de usuários para um aplicativo voltado ao público
 |-------------------------------|--------------------------------------------------|------------------------------------------------------------|
 |Idade: 37 anos                 |Segmento: Oficinas Mecânicas e Centro Automotivos | Veículo: Pequena coleção de carros raros                   |               
 |Gestora de locadora de veículos|Prioridades:  Serviço ao cliente                  | Motivações/objetivos:maximizar a rentabilidade e           |
-|                               |                                                  |garantir a disponibilidade                                  | 
+|                               |                                                   garantir a disponibilidade                                  | 
 
 
 
