@@ -87,11 +87,6 @@ Ao criar perfis e histórias de usuários para um aplicativo voltado ao público
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas | 
-
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`         |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|--------------------------------------------|----------------------------------------|
 |João Nogueira       |Aplicativo que envie lembretes automáticos  |João deseja manter o carro em bom estado, mas costuma esquecer datas de revisão e troca de óleo. 
