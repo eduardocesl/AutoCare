@@ -24,18 +24,18 @@ Ao criar perfis e histórias de usuários para um aplicativo voltado ao público
 |Gerente de vendas   |Prioridades: Praticidade                       | Motivações/objetivos: Família             |
  
 
-|Ana Bugalho         |                                               |                                                           |
-|--------------------|-----------------------------------------------|-----------------------------------------------------------|
-|Idade: 45 anos      |Segmento: Empresas com Frotas de veículos      | Veículo: Frota de 50 caminhões                            |               
-|gerente de operações|Prioridades: maximizar a eficiência da frota   | Motivações/objetivos: Redução de custos                   |                                |empresa logística   |                                               |                                                           |
+|Ana Bugalho         |                                               |                                         |
+|--------------------|-----------------------------------------------|-----------------------------------------|
+|Idade: 45 anos      |Segmento: Empresas com Frotas de veículos      | Veículo: Frota de 50 caminhões          |               
+|gerente de operações|Prioridades: maximizar a eficiência da frota   | Motivações/objetivos: Redução de custos |                                          |empresa logística   |                                               |                                         |
 
 
 
-|Carlos Munhoz          |                                                 |                                                           |
-|-----------------------|-------------------------------------------------|-----------------------------------------------------------|
-|Idade: 50 anos         |Segmento: Oficinas Mecânicas e Centro Automotivos| Veículo: Veículos de terceiros                            |               
-|Proprietário de Oficina|Prioridades: Serviço ao cliente                  | Motivações/objetivos: Modernizar a gestão do negócio      |
-|mecânica               |                                                 |                                                           |
+|Carlos Munhoz          |                                                 |                                                      |
+|-----------------------|-------------------------------------------------|------------------------------------------------------|
+|Idade: 50 anos         |Segmento: Oficinas Mecânicas e Centro Automotivos| Veículo: Veículos de terceiros                       |               
+|Proprietário de Oficina|Prioridades: Serviço ao cliente                  | Motivações/objetivos: Modernizar a gestão do negócio |
+|mecânica               |                                                 |                                                      |
                                                                              
 
  
@@ -52,50 +52,32 @@ Ao criar perfis e histórias de usuários para um aplicativo voltado ao público
                                                                              
 
 
-|Fernanda Braga                 |                                                  |                                                            |
-|-------------------------------|--------------------------------------------------|------------------------------------------------------------|
-|Idade: 37 anos                 |Segmento: Oficinas Mecânicas e Centro Automotivos | Veículo: Pequena coleção de carros raros                   |               
-|Gestora de locadora de veículos|Prioridades:  Serviço ao cliente                  | Motivações/objetivos:maximizar a rentabilidade e           |
-|                               |                                                   garantir a disponibilidade                                  | 
+|Fernanda Braga                 |                                                  |                                                |
+|-------------------------------|--------------------------------------------------|------------------------------------------------|
+|Idade: 37 anos                 |Segmento: Oficinas Mecânicas e Centro Automotivos | Veículo: Pequena coleção de carros raros       |               
+|Gestora de locadora de veículos|Prioridades:  Serviço ao cliente                  | Motivações/objetivos: maximizar a rentabilidade|
+                                                                                                                     
 
+|Lucas Emanuel    |                                                  |                                                         |
+|-----------------|--------------------------------------------------|---------------------------------------------------------|
+|Idade: 23 anos   |Segmento: Público com baixa experiência           |                                                         |
+|Estagiário       |em Manutenção Veicular                            | Veículo: Primeiro veículo                               |               
+|                 |Prioridades:  Serviço ao cliente                  | Motivações/objetivos: Aprender sobre manutenção básica  |
+
+
+|Claudia Queiroz   |                                         |                                           |
+|------------------|-----------------------------------------|-------------------------------------------|
+|Idade: 57 anos    |Segmento: Família com múltiplos veículos | Veículo: 3 veículos familiares            |
+|Gestão familiar   |Prioridade: Organizacão e manutenção     | Motivações/objetivos: Segurança familiar  |               
 
 
 
  
 
-Lucas Emanuel 
-
-Idade: 23 anos 
-
-Segmento: Público com baixa experiência em Manutenção Veicular 
-
-Ocupação: Estagiário 
-
-Veículo: Primeiro veículo 
-
-Prioridade: Manter o bom estado do veículo 
 
  
 
-Motivações/objetivos: Aprender sobre manutenção básica 
 
- 
-
-Claudia Queiroz 
-
-Idade: 57 anos 
-
-Segmento: Família com múltiplos veículos 
-
-Ocupação: Gestão familiar 
-
-Veículo: 3 veículos familiares 
-
-Prioridade: Organização e manutenção 
-
- 
-
-Motivações/objetivos: Segurança familiar 
 
 
 
@@ -108,7 +90,30 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Administrador       | Alterar permissões                 | Permitir que possam administrar contas | 
+
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`         |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|--------------------------------------------|----------------------------------------|
+|João Nogueira       |Aplicativo que envie lembretes automáticos       |João deseja manter o carro em bom estado, mas costuma esquecer datas de revisão e troca de óleo. 
+|                    |Guardar o histórico de manutenção, 
+                     acompanhar os gastos com o carro para ajustar seu orçamento. 
+|Ana Bugalho         |sistema que permita monitorar a condição de cada veículo da frota, programar manutenções preventivas e gerar relatórios detalhados sobre o uso e os custos de cada veículo. 
+
+|Carlos Munhoz |Gerenciar o histórico de serviços dos clientes, lembrando-os sobre revisões futuras e facilitando a comunicação com eles.|melhore a organização interna da oficina, com controle de peças e agendamento de serviços| 
+
+Maria Julia 
+
+monitorar a quilometragem, agendar manutenções preventivas e calcular os custos operacionais, como combustível e manutenção, para manter seu negócio rentável. 
+
+Pedro Maurício 
+
+aplicativo onde possa registrar todos os detalhes de suas restaurações, incluindo fotos e notas sobre o processo 
+
+Lucas Emanuel 
+
+aplicativo simples e intuitivo que o guie nas tarefas básicas de manutenção, como verificar o óleo, calibrar os pneus e agendar revisões. 
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
