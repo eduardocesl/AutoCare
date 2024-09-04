@@ -94,7 +94,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`         |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|--------------------------------------------|----------------------------------------|
-|João Nogueira       |Aplicativo que envie lembretes automáticos       |João deseja manter o carro em bom estado, mas costuma esquecer datas de revisão e troca de óleo. 
+|João Nogueira       |Aplicativo que envie lembretes automáticos  |João deseja manter o carro em bom estado, mas costuma esquecer datas de revisão e troca deóleo. 
 |                    |Guardar o histórico de manutenção, 
                      acompanhar os gastos com o carro para ajustar seu orçamento. 
 |Ana Bugalho         |sistema que permita monitorar a condição de cada veículo da frota, programar manutenções preventivas e gerar relatórios detalhados sobre o uso e os custos de cada veículo. 
