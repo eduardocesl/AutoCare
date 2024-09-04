@@ -96,20 +96,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|--------------------------------------------|----------------------------------------|
 |João Nogueira       |Aplicativo que envie lembretes automáticos  |João deseja manter o carro em bom estado, mas costuma esquecer datas de revisão e troca de óleo. 
 |Ana Bugalho         | monitorar a condição de cada veículo da frota, programar manutenções preventivas e gerar relatórios detalhados sobre o uso e os custos de cada veículo.        |integrar com outros sistemas de gestão que ela já utiliza.|
-
-|Carlos Munhoz |Gerenciar o histórico de serviços dos clientes, lembrando-os sobre revisões futuras e facilitando a comunicação com eles.|melhore a organização interna da oficina, com controle de peças e agendamento de serviços| 
-
-Maria Julia 
-
-monitorar a quilometragem, agendar manutenções preventivas e calcular os custos operacionais, como combustível e manutenção, para manter seu negócio rentável. 
-
-Pedro Maurício 
-
-aplicativo onde possa registrar todos os detalhes de suas restaurações, incluindo fotos e notas sobre o processo 
-
-Lucas Emanuel 
-
-aplicativo simples e intuitivo que o guie nas tarefas básicas de manutenção, como verificar o óleo, calibrar os pneus e agendar revisões. 
+|Carlos Munhoz       |Gerenciar o histórico de serviços dos clientes, lembrando-os sobre revisões futuras e facilitando a comunicação com eles.|Melhorar a organização interna da oficina, com controle de peças e agendamento de serviços| 
+|Maria Julia         |Monitorar a quilometragem, agendar manutenções preventivas e calcular os custos operacionais, como combustível e manutenção, para manter seu negócio rentável. |Garantir que seu carro esteja sempre em boas condições, pois depende dele para sua renda |
+|Pedro Maurício      |registrar todos os detalhes de suas restaurações, incluindo fotos e notas sobre o processo | Deseja manter um histórico de manutenção rigoroso para preservar o valor dos veículos.|
+|Lucas Emanuel       |aplicativo simples e intuitivo que o guie nas tarefas básicas de manutenção, como verificar o óleo, calibrar os pneus e agendar revisões. |dicas e tutoriais para ajudá-lo a cuidar do carro|
 
 
 
