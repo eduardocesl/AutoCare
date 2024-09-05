@@ -197,37 +197,22 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 ![Diagrama de casos de uso](img/02-diagrama-casos-de-uso.png)
 
-**Associação**
 
-Usuário: Realizar o login ou cadastro. 
+|Relacionamento      |Ator                                           |Ação                                                                                              |
+|--------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------|
+|Associação          |Usuário                                        | Realizar o login ou cadastro.                                                                    |               
+|Associação          |Usuário                                        | Cadastrar seu(s) veículo(s).                                                                     |
+|Associação          |Usuário                                        | Gerenciar seu(s) veículo(s).                                                                     |
+|Associação          |Usuário                                        | Cadastrar seu(s) abastecimento(s).                                                               |
+|Associação          |Usuário                                        | Cadastrar motorista(s).                                                                          |
+|Associação          |Usuário                                        | Consultar custo médio veículo.                                                                   |
+|Associação          |Sistema                                        | Verificar senha.                                                                                 |
+|Associação          |Sistema                                        | Exibir erro de login.                                                                            |
+|Associação          |Sistema                                        | Consultar custo médio veículo.                                                                   |
+|Inclusão            | -                                             | Toda vez que o usuário realizar Login, o sistema verificará a senha automaticamente.             |
+|Extensão            | -                                             | Apenas quando o usuário digitar senha errada, aparecerá a mensagem de erro de login.             |
+|Extensão            | -                                             | Apenas quando o usuário não possuir cadastro, poderá se cadastrar.             |
 
-Usuário: Cadastrar seu(s) veículo(s).
-
-Usuário: Gerenciar seu(s) veículo(s).
-
-Usuário: Cadastrar seu(s) abastecimento(s).
-
-Usuário: Cadastrar motorista(s).
-
-Usuário: Consultar custo médio veículo.
-
-Sistema: Verificar senha.
-
-Sistema: Exibir erro de login.
-
-Sistema: Consultar custo médio veículo.
-
-
-**Inclusão**
-
-Toda vez que o usuário realizar Login, o sistema verificará a senha automaticamente.
-
-
-**Extensão**
-
-Apenas quando o usuário digitar senha errada, aparecerá a mensagem de erro de login.
-
-Apenas quando o usuário não possuir cadastro, poderá se cadastrar.
 
 
 # Gerenciamento de Projeto <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 50>
