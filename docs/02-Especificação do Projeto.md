@@ -190,6 +190,19 @@ Os fatores apresentados na tabela a seguir tratam dos processos que restringem o
 | Taxa de erro de funcionalidades | Medir a confiabilidade das funcionalidades do aplicativo | Percentual de erros reportados em funcionalidades do aplicativo | Percentual de erros                      | Banco de dados da aplicação                  | Qualidade e confiabilidade                    |
 
 
+## Modelamgem do processo de negócios
+
+### Análise da situação atual
+Para conseguir gerenciar uma frota de veículos é preciso ter clareza de todos os gastos existentes dos veículos, isso afeta diretamente um negócio fazendo-o dar certo ou não  , reduzir o consumo de combustível, riscos de problemas mecânicos, otimizar rotas são meios de aumentar as margens de lucro de uma locadora.
+
+### Descrição geral da proposta
+
+A aplicação visa ajudar as empresas a otimizar os gastos e ter um controle maior sobre a sua frota
+
+### Processo 1 – Visualizar histórico do veículo
+
+![_Fluxograma](https://github.com/user-attachments/assets/33ef2067-c461-4d97-a5f2-f103d2e94255)
+
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
@@ -221,17 +234,33 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
-
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
 
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![Diagrama de Gantt](https://github.com/user-attachments/assets/9c8784fe-89a7-491d-a85d-e950a3cc5f04)
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. O gerenciamento de nossa equipe está distribuído por afinidade em cada tecnologia e preferências de desenvolvimento
 
-![Simple Project Timeline](img/02-project-timeline.png)
+
+![Roteiro](https://github.com/user-attachments/assets/3d1d9a44-439a-463e-b309-cf8c503a6a66)
+
+## Gerenciamento de Orçamento
+
+| Despesas            | Agosto     | Setembro   | Outubro    | Novembro   | Dezembro   | Total       |
+|---------------------|------------|------------|------------|------------|------------|-------------|
+| Gerente de projeto  | R$ 8.500,00| R$ 8.500,00| R$ 8.500,00| R$ 8.500,00| R$ 8.500,00| R$ 42.500,00|
+| Dev back-end        | R$ 4.500,00| R$ 4.500,00| R$ 4.500,00| R$ 4.500,00| R$ 4.500,00| R$ 22.500,00|
+| Dev front-end       | R$ 4.000,00| R$ 4.000,00| R$ 4.000,00| R$ 4.000,00| R$ 4.000,00| R$ 20.000,00|
+| Designer            | R$ 3.700,00| R$ 3.700,00| R$ 3.700,00| R$ 3.700,00| R$ 3.700,00| R$ 18.500,00|
+| Equipamentos        | R$ 28.500,00| R$ 0,00    | R$ 0,00    | R$ 0,00    | R$ 0,00    | R$ 28.500,00|
+| Manutenção          | R$ 0,00    | R$ 750,00  | R$ 420,00  | R$ 0,00    | R$ 310,00  | R$ 1.480,00 |
+| Energia             | R$ 910,00  | R$ 1.020,00| R$ 940,00  | R$ 1.180,00| R$ 880,00  | R$ 4.930,00 |
+| Aluguel             | R$ 3.400,00| R$ 3.400,00| R$ 3.400,00| R$ 3.400,00| R$ 3.400,00| R$ 17.000,00|
+| **Despesas Totais** | **R$ 53.510,00** | **R$ 25.870,00** | **R$ 25.460,00** | **R$ 25.280,00** | **R$ 25.290,00** | **R$ 155.410,00** |
+
+
+
+
 
