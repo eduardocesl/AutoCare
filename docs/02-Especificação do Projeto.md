@@ -194,24 +194,39 @@ Os fatores apresentados na tabela a seguir tratam dos processos que restringem o
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
+
 ![Diagrama de casos de uso](img/02-diagrama-casos-de-uso.png)
 
 **Associação**
+
 Usuário: Realizar o login ou cadastro. 
+
 Usuário: Cadastrar seu(s) veículo(s).
+
 Usuário: Gerenciar seu(s) veículo(s).
+
 Usuário: Cadastrar seu(s) abastecimento(s).
+
 Usuário: Cadastrar motorista(s).
+
 Usuário: Consultar custo médio veículo.
+
 Sistema: Verificar senha.
+
 Sistema: Exibir erro de login.
+
 Sistema: Consultar custo médio veículo.
 
+
 **Inclusão**
+
 Toda vez que o usuário realizar Login, o sistema verificará a senha automaticamente.
 
+
 **Extensão**
+
 Apenas quando o usuário digitar senha errada, aparecerá a mensagem de erro de login.
+
 Apenas quando o usuário não possuir cadastro, poderá se cadastrar.
 
 
