@@ -5,8 +5,8 @@ A arquitetura do Software será feita através dos seguintes termos:
 * Camada Clientes:
    *  Desktop: Realizado com as linguagens de Front-End `Javascript`, `HTML5`, `CSS3`;
    *  Mobile: Realizado com a linguagem `React Native`;
-Camada Servidor:  Requisições para a camada de Back-End através da API (Rest). Realização com a linguagem de programação `Node.js`;
-Banco de dados: Consulta ao banco de dados, utilizando o `MongoDB` (NoSQL);
+* Camada Servidor:  Requisições para a camada de Back-End através da API (Rest). Realização com a linguagem de programação `Node.js`;
+* Banco de dados: Consulta ao banco de dados, utilizando o `MongoDB` (NoSQL);
 
 
 ![Arquitetura de Solução](https://github.com/user-attachments/assets/7a43fdbb-164d-4eb8-ada8-271f092da66d)
