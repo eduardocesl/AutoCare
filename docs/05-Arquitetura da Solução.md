@@ -1,10 +1,16 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+A arquitetura do Software será feita através dos seguintes termos:
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+* Camada Clientes:
+   *  Desktop: Realizado com as linguagens de Front-End `Javascript`, `HTML5`, `CSS3`;
+   *  Mobile: Realizado com a linguagem `React Native`;
+Camada Servidor:  Requisições para a camada de Back-End através da API (Rest). Realização com a linguagem de programação `Node.js`;
+Banco de dados: Consulta ao banco de dados, utilizando o `MongoDB` (NoSQL);
 
-![Arquitetura da Solução](img/api_web_mobile.png)
+
+![Arquitetura de Solução](https://github.com/user-attachments/assets/7a43fdbb-164d-4eb8-ada8-271f092da66d)
+
 
 ## Diagrama de Classes
 
