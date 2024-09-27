@@ -8,8 +8,17 @@ datasource db {
 }
 
 model Usuarios {
-  id      String   @id @default(auto()) @map("_id") @db.ObjectId
-  email   String   @unique
-  name    String
-  senha   String
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  email        String       @unique
+  senha        String
+  motoristas   Motoristas[]
+  criadoEm     DateTime     @default(now())
+  atualizadoEm DateTime     @updatedAt
+}
+
+model Motoristas {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  usuarioId    String   @db.ObjectId
+  usuario      Usuarios @relation(fields: [usuarioId], references: [id])
 }
