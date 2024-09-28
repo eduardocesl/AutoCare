@@ -18,7 +18,7 @@ model Usuarios {
   email          String       @unique
   senha          String
   motoristas     Motoristas[]
-  veiculos       Veiculos[]   @relation("UsuarioVeiculos") // Definindo a relação
+  veiculos       Veiculos[]   @relation("UsuarioVeiculos")
   criadoEm       DateTime     @default(now())
   atualizadoEm   DateTime     @updatedAt
 }
@@ -41,11 +41,11 @@ model Veiculos {
   placa          String   @unique
   marca          String
   modelo         String
-  anoFabricacao  Int      // Ano de Fabricação
-  anoModelo      Int      // Ano do Modelo
+  anoFabricacao  Int
+  anoModelo      Int
   cor            String
   criadoEm       DateTime @default(now())
   atualizadoEm   DateTime @updatedAt
-  usuarioId      String?  @db.ObjectId // Campo opcional para o id do usuário
-  usuario        Usuarios? @relation("UsuarioVeiculos", fields: [usuarioId], references: [id]) // Relacionamento opcional
+  usuarioId      String?  @db.ObjectId
+  usuario        Usuarios? @relation("UsuarioVeiculos", fields: [usuarioId], references: [id])
 }
