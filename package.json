@@ -15,12 +15,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.19.1",
+    "@prisma/client": "^5.20.0",
     "bcrypt": "^5.1.1",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
-    "prisma": "^5.19.1"
+    "prisma": "^5.20.0"
   }
 }

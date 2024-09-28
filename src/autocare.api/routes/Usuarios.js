@@ -30,6 +30,56 @@ router.post('/cadastro', async (req, res) => {
     }
 });
 
+// Obter todos os usuários cadastrados
+router.get('/usuarios', async (req, res) => {
+    try {
+        const usuarios = await prisma.usuarios.findMany();
+        res.status(200).json(usuarios);
+    } catch (err) {
+        console.error("Erro ao buscar usuários:", err);
+        res.status(500).json({ message: 'Erro no servidor', error: err.message });
+    }
+});
+
+// Atualizar um usuário
+router.put('/usuarios/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { email, name } = req.body; 
+
+        const user = await prisma.usuarios.update({
+            where: { id: id },
+            data: {
+                email: email,
+                name: name
+            },
+        });
+
+        res.status(200).json({ message: 'Usuário atualizado com sucesso', user });
+    } catch (err) {
+        console.error("Erro ao atualizar usuário:", err);
+        res.status(500).json({ message: 'Erro no servidor', error: err.message });
+    }
+});
+
+
+// Deletar um usuário
+router.delete('/usuarios/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const user = await prisma.usuarios.delete({
+            where: { id: id },
+        });
+
+        res.status(200).json({ message: 'Usuário deletado com sucesso', user });
+    } catch (err) {
+        console.error("Erro ao deletar usuário:", err);
+        res.status(500).json({ message: 'Erro no servidor', error: err.message });
+    }
+});
+
+
 //Login
 router.post('/login', async (req, res) => {
     try {
