@@ -1,11 +1,14 @@
 import express from 'express'
 import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
+
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 const router = express.Router()
 
-/* ROTA DE CADASTRO */
+const JWT_SECRET = process.env.JWT_SECRET
+//Cadastro
 router.post('/cadastro', async (req, res) => {
     try {
         const user = req.body;
@@ -14,8 +17,8 @@ router.post('/cadastro', async (req, res) => {
 
         const userDB = await prisma.usuarios.create({
             data: {
-                email: user.email,
                 name: user.name,
+                email: user.email,
                 senha: hashPassword,
             },
         });
@@ -28,30 +31,30 @@ router.post('/cadastro', async (req, res) => {
 });
 
 
-/* ROTA DE LOGIN */
+//Login
 router.post('/login', async (req, res) => {
     try {
         const userInfo = req.body
 
-        //Busca o user no DB
         const user = await prisma.usuarios.findUnique({
             where: { email: userInfo.email }
         })
 
-        //Verifica se o user existe
         if (!user) {
             return res.status(404).json({ message: 'Usuário não encontrado' })
         }
 
-        //Compara a senha
         const validPassword = await bcrypt.compare(userInfo.senha, user.senha)
 
         if (!validPassword) {
             return res.status(400).json({ message: 'Senha incorreta' })
         }
 
-        res.status(200).json({ message: 'Login bem-sucedido', user })
+        const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: '1h' })
+
+        res.status(200).json({ message: 'Login bem-sucedido', token, id: user.id, email: user.email });
     } catch (err) {
+        console.log(err)
         res.status(500).json({ message: 'Erro no servidor' })
     }
 })
