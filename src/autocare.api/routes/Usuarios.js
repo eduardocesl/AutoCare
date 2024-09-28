@@ -8,6 +8,8 @@ const prisma = new PrismaClient()
 const router = express.Router()
 
 const JWT_SECRET = process.env.JWT_SECRET
+
+
 //Cadastro
 router.post('/cadastro', async (req, res) => {
     try {
@@ -29,6 +31,7 @@ router.post('/cadastro', async (req, res) => {
         res.status(500).json({ message: 'Erro no servidor', error: err.message });
     }
 });
+
 
 //Login
 router.post('/login', async (req, res) => {
