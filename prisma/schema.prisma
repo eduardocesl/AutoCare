@@ -7,18 +7,30 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Status {
+  ATIVO
+  INATIVO
+}
+
 model Usuarios {
-  id           String       @id @default(auto()) @map("_id") @db.ObjectId
-  name         String
-  email        String       @unique
-  senha        String
-  motoristas   Motoristas[]
-  criadoEm     DateTime     @default(now())
-  atualizadoEm DateTime     @updatedAt
+  id             String       @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  email          String       @unique
+  senha          String
+  motoristas     Motoristas[]
+  criadoEm       DateTime     @default(now())
+  atualizadoEm   DateTime     @updatedAt
 }
 
 model Motoristas {
-  id           String   @id @default(auto()) @map("_id") @db.ObjectId
-  usuarioId    String   @db.ObjectId
-  usuario      Usuarios @relation(fields: [usuarioId], references: [id])
+  id             String       @id @default(auto()) @map("_id") @db.ObjectId
+  nome           String
+  cnh            String       @unique
+  telefone       String?
+  dataNascimento DateTime?
+  status         Status       @default(ATIVO)
+  criadoEm       DateTime     @default(now())
+  atualizadoEm   DateTime     @updatedAt
+  usuarioId      String   @db.ObjectId
+  usuario        Usuarios @relation(fields: [usuarioId], references: [id])
 }
