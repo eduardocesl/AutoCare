@@ -58,6 +58,43 @@ A GIF a seguir mostra o funcionamento da rota **DELETE** no arquivo `Usuarios.js
     <br>
 </p>
 
+---
+
+## Teste da Rota "Create - Veículos"
+
+A GIF a seguir ilustra o teste da rota **CREATE** no arquivo `Veiculos.js`. Esta rota permite a criação de novos veículos, sendo necessário autenticação para concluir o processo. A GIF demonstra a inserção dos dados do veículo e a resposta do sistema após a autenticação bem-sucedida.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/8cc02a19-8ac6-46ce-b285-3c378901b54c" alt="Create - Veículos" width="900">
+    <br>
+</p>
+
+---
+
+## Teste da Rota "Get - Veículos"
+
+A GIF a seguir ilustra o teste da rota **GET** no arquivo `Veiculos.js`. Esta rota permite a recuperação dos veículos cadastrados. A GIF demonstra a solicitação de dados e a resposta do sistema, mostrando os veículos disponíveis.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/3e850729-7519-4f11-a5ff-80aa393e0d48" alt="Get - Veículos" width="900">
+    <br>
+</p>
+
+---
+
+## Teste da Rota "Edit - Veículos"
+
+A GIF a seguir ilustra o teste da rota **EDIT** no arquivo `Veiculos.js`. Esta rota permite a edição de veículos cadastrados, sendo necessário autenticação para concluir o processo. A GIF demonstra a atualização dos dados do veículo e a resposta do sistema após a autenticação bem-sucedida.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/323ae59d-b909-49b8-8ab9-c88d40156b4a" alt="Edit - Veículos" width="900">
+    <br>
+</p>
+
+---
 
 # Testes Unitários no Backend
 
