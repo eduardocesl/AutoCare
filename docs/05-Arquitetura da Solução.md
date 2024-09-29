@@ -16,10 +16,13 @@ A arquitetura do Software será feita através dos seguintes termos:
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+<p align="center">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/91ae7d71-dd1a-49b7-ac3f-53872d3ff239" alt="diagrama de classes (2)">
+  <br><br>
+</p>
+
 
 ## Documentação do Banco de Dados MongoDB
 
@@ -118,9 +121,32 @@ Escalabilidade: Considere estratégias de sharding e replicação para lidar com
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+O projeto **AutoCare** utiliza uma combinação de tecnologias para implementar uma solução eficaz de gestão de veículos. As principais tecnologias e ferramentas utilizadas são:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+- **Node.js**: Usado para o desenvolvimento do backend, proporcionando um ambiente de execução JavaScript eficiente e escalável.
+- **Express.js**: Framework para Node.js que estrutura as rotas da API e facilita a criação de endpoints RESTful.
+- **Prisma**: ORM (Object-Relational Mapping) utilizado para interagir com o banco de dados MongoDB, facilitando consultas e manipulação de dados.
+- **MongoDB Atlas**: Banco de dados NoSQL utilizado para armazenar informações de usuários, veículos e motoristas.
+- **JWT (JSON Web Token)**: Utilizado para autenticação e segurança da comunicação entre cliente e servidor.
+- **Thunder Client (VS Code)**: Ferramenta para realizar testes de requisições HTTP diretamente no VS Code.
+- **VS Code**: IDE principal utilizada para o desenvolvimento, com integração com ferramentas de teste e controle de versão.
+
+### Fluxo de Interação
+
+1. O usuário interage com o sistema por meio de um cliente, enviando uma requisição HTTP (como cadastro de veículo ou login).
+2. A requisição é recebida pela API construída em Node.js e Express.js, onde a autenticação é realizada através de JWT.
+3. A API utiliza Prisma para interagir com o banco de dados MongoDB Atlas, realizando operações como leitura, criação ou atualização de dados.
+4. O sistema processa os dados e retorna a resposta ao cliente, garantindo que o usuário receba a informação solicitada (ex: cadastro de veículo, obtenção de dados ou atualização de registros).
+
+Essa arquitetura garante que a interação entre o cliente e o sistema seja eficiente, segura e escalável.
+
+
+<p align="center">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/d1198503-b0ca-4af8-8c17-003e79810b71" alt="Fluxo">
+  <br><br>
+</p>
+
 
 ## Hospedagem
 
