@@ -1,3 +1,64 @@
+# Testes de Rota do Backend
+
+## Teste da Rota "CREATE - Usuários"
+
+A GIF a seguir demonstra a funcionalidade da rota **CREATE** no arquivo `Usuarios.js`, que permite o cadastro de novos usuários no sistema. Através da requisição, um novo usuário é criado com os dados fornecidos, validando a operação e garantindo a inserção correta no banco de dados.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/1b79657c-31b2-4e42-a316-6f0ca73d032e" alt="Create - User" width="900">
+    <br>
+</p>
+
+---
+
+## Teste da Rota "GET - Usuários"
+
+A GIF a seguir demonstra a funcionalidade da rota **GET ALL** no arquivo `Usuarios.js`, que permite a recuperação de todos os usuários cadastrados no sistema. Através da requisição, os dados de todos os usuários são retornados, permitindo visualizar a lista completa de registros armazenados no banco de dados.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/7bb9766b-ca1a-4118-866f-bc269c02276c" alt="GET - User" width="900">
+    <br>
+</p>
+
+---
+
+## Teste da Rota "LOGIN - Usuários"
+
+A GIF a seguir ilustra o funcionamento da rota **LOGIN** no arquivo `Usuarios.js`, que possibilita a autenticação de usuários. Durante o processo, o usuário insere suas credenciais (email e senha). Ao ser validado corretamente, ele recebe um token de autenticação. Além disso, a GIF também mostra o caso de tentativa de login com senha incorreta, onde o sistema responde adequadamente, destacando a verificação das credenciais.
+  
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/43d08e61-106f-4f95-9f77-3b4ae9ba458d" alt="Login - User" width="900">
+    <br>
+</p>
+
+---
+
+## Teste da Rota "EDIT - Usuários"
+
+A GIF a seguir apresenta a funcionalidade da rota **EDIT** no arquivo `Usuarios.js`, que permite a atualização dos dados de um usuário específico. Através da requisição, os campos selecionados do usuário são alterados e a resposta do sistema confirma a modificação com sucesso.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/f05d5fd7-9e4c-43e0-9e85-10ffdc3f600a" alt="Edit - User" width="900">
+    <br>
+</p>
+
+---
+
+## Teste da Rota "DELETE - Usuários"
+
+A GIF a seguir mostra o funcionamento da rota **DELETE** no arquivo `Usuarios.js`, que permite a remoção de um usuário do sistema. Através da requisição, o usuário especificado é excluído, e a resposta confirma a operação, assegurando que o registro foi efetivamente removido do banco de dados.
+
+<p align="center">
+    <br>
+  <img src="https://github.com/user-attachments/assets/a7574fde-b7bf-4c06-bfc8-30efdf6e7afd" alt="Delete - User" width="900">
+    <br>
+</p>
+
+
 # Testes Unitários no Backend
 
 ## O que são Testes Unitários?
