@@ -1,22 +1,26 @@
 import express from 'express';
 import { PrismaClient } from '@prisma/client';
+import auth from '../middlewares/auth.js';
 
 const prisma = new PrismaClient();
 const router = express.Router();
 
 // Cadastrar veículo
-router.post('/veiculos', async (req, res) => {
+router.post('/veiculos', auth, async (req, res) => {
     try {
         const { placa, marca, modelo, anoFabricacao, anoModelo, cor } = req.body;
+
+        const usuarioId = req.user.id;
 
         const novoVeiculo = await prisma.veiculos.create({
             data: {
                 placa,
                 marca,
-                modelo,          
+                modelo,
                 anoFabricacao,
                 anoModelo,
                 cor,
+                usuarioId,
             },
         });
 
@@ -26,7 +30,6 @@ router.post('/veiculos', async (req, res) => {
         res.status(500).json({ message: 'Erro no servidor', error: err.message });
     }
 });
-
 
 // Obter todos os veículos cadastrados
 router.get('/veiculos', async (req, res) => {
@@ -40,10 +43,10 @@ router.get('/veiculos', async (req, res) => {
 });
 
 // Atualizar veículo
-router.put('/veiculos/:id', async (req, res) => {
+router.put('/veiculos/:id', auth, async (req, res) => {
     try {
         const { id } = req.params;
-        const { placa, marca, anoFabricacao, anoModelo, cor, usuarioId } = req.body;
+        const { placa, marca, anoFabricacao, anoModelo, cor } = req.body;
 
         const veiculo = await prisma.veiculos.update({
             where: { id: id },
@@ -53,7 +56,6 @@ router.put('/veiculos/:id', async (req, res) => {
                 anoFabricacao,
                 anoModelo,
                 cor,
-                usuarioId,
             },
         });
 
