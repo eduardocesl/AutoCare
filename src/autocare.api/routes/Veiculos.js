@@ -64,4 +64,21 @@ router.put('/veiculos/:id', async (req, res) => {
     }
 });
 
+// Deletar um veiculo
+router.delete('/veiculo/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const user = await prisma.veiculo.delete({
+            where: { id: id },
+        });
+
+        res.status(200).json({ message: 'Veículo deletado com sucesso', user });
+    } catch (err) {
+        console.error("Erro ao deletar veículo:", err);
+        res.status(500).json({ message: 'Erro no servidor', error: err.message });
+    }
+});
+
+
 export default router;
