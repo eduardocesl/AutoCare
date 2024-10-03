@@ -17,7 +17,7 @@ model Usuarios {
   name           String
   email          String       @unique
   senha          String
-  motoristas     Motoristas[]
+  motoristas     Motoristas[] @relation("UsuarioMotoristas")
   veiculos       Veiculos[]   @relation("UsuarioVeiculos")
   criadoEm       DateTime     @default(now())
   atualizadoEm   DateTime     @updatedAt
@@ -32,8 +32,8 @@ model Motoristas {
   status         Status       @default(ATIVO)
   criadoEm       DateTime     @default(now())
   atualizadoEm   DateTime     @updatedAt
-  usuarioId      String       @db.ObjectId
-  usuario        Usuarios     @relation(fields: [usuarioId], references: [id])
+  usuarioId      String?       @db.ObjectId
+  usuario        Usuarios?     @relation("UsuarioMotoristas", fields: [usuarioId], references: [id])
 }
 
 model Veiculos {
