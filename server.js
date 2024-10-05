@@ -13,3 +13,5 @@ app.use('/', Motoristas)
 app.use('/', Veiculos)
 
 app.listen(3000, () => console.log('Servidor On'))
+
+export default app;
