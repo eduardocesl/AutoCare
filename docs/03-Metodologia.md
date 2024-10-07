@@ -7,9 +7,9 @@ A equipe utiliza a metodologia Scrum para o gerenciamento do projeto. Utilizamos
 
 Os artefatos do projeto são desenvolvidos a partir das plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue:
 
-|Ambiente de Trabalho	|Plataforma	|Link de Acesso
+|Ambiente de Trabalho	|Plataforma	|Link de Acesso|
 |Repositório	         | Github    | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e4-proj-dad-t3-autocare   |
-|Documentos do Projeto|	GitHubDocs|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e4-proj-dad-t3-autocare/tree/main/docs
+|Documentos do Projeto|	GitHubDocs|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e4-proj-dad-t3-autocare/tree/main/docs|
 
 
 ## Controle de Versão
@@ -49,7 +49,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 Apresente a divisão de papéis entre os membros do grupo.
 
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 - Scrum Master: Marco Antonio Gil;
 - Product Owner: Carlos Eduardo;
 - Equipe de Desenvolvimento: Laís Oliveira, Lucas Soares, Matheus Soares;
