@@ -16,11 +16,7 @@ A GIF a seguir demonstra a funcionalidade da rota **CREATE** no arquivo `Usuario
 
 A GIF a seguir demonstra a funcionalidade da rota **GET ALL** no arquivo `Usuarios.js`, que permite a recuperação de todos os usuários cadastrados no sistema. Através da requisição, os dados de todos os usuários são retornados, permitindo visualizar a lista completa de registros armazenados no banco de dados.
 
-<p align="center">
-    <br>
-  <img src="https://github.com/user-attachments/assets/7bb9766b-ca1a-4118-866f-bc269c02276c" alt="GET - User" width="900">
-    <br>
-</p>
+![image](https://github.com/user-attachments/assets/677dd3db-9a50-4b2f-ac5d-a961ff547846)
 
 ---
 
