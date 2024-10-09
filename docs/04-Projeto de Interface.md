@@ -20,17 +20,59 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 > **Links Úteis**:
 > - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
-## Wireframes
+## Wireframes AutoCare
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/31e40d96-23c1-4684-b863-6a8fd2db1af8" alt="Login" width="720">
+  <p><b>1. Login</b></p>
+</div>
+<br><br>
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9bd18d41-575a-42ee-a4b6-ea573d8af727" alt="Cadastro" width="720">
+  <p><b>2. Cadastro</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9a8c32e5-7563-4cc2-86fe-bd9ad181d78a" alt="Home" width="720">
+  <p><b>3. Home</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/26e8bb76-e6cf-4da1-a33b-6de276bb4a0a" alt="Veículos" width="720">
+  <p><b>4.1. Veículos</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fbfb71bb-0e47-48d0-91f7-03e35a9fdc8e" alt="Veículos Alternativa" width="720">
+  <p><b>4.2. Cadastro de Veículos</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c7580371-a1bc-4e10-a4f5-1f977dd45d04" alt="Motoristas" width="720">
+  <p><b>5.1. Motoristas</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0d69b97f-ec59-4416-b159-afdcdfee1ea1" alt="Motoristas Alternativa" width="720">
+  <p><b>5.2. Cadastro de Motoristas</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7551e892-3d18-4697-973d-e26842c42369" alt="Perfil" width="720">
+  <p><b>6. Perfil</b></p>
+</div>
+<br><br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6c35d9cb-a4be-47e8-8cf9-e10fc6754f5f" alt="Configurações" width="720">
+  <p><b>7. Configurações</b></p>
+</div>
+<br><br>
+
