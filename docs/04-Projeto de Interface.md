@@ -34,7 +34,7 @@ Este diagrama de fluxo é uma ferramenta essencial para entender e planejar a in
   <img src="https://github.com/user-attachments/assets/2adab588-4213-42ce-b18f-ea449a6c1301" alt="Fluxograma do Usuário - AutoCare">
 </div>
 
-***Observação: Para melhor visualização, recomendamos que o diagrama acima seja aberto em uma nova guia***
+***Observação: Para uma melhor visualização, recomendamos que o diagrama acima seja aberto em uma nova guia. Além disso, incluímos ao final desta página um link que direciona para o protótipo interativo do fluxo do usuário, desenvolvido no Figma.***
 
 
 ## Wireframes AutoCare
@@ -92,4 +92,10 @@ Este diagrama de fluxo é uma ferramenta essencial para entender e planejar a in
   <p><b>7. Configurações</b></p>
 </div>
 <br><br>
+
+### Protótipo das wireframes
+
+Este protótipo interativo foi desenvolvido no Figma e apresenta as wireframes do AutoCare conectadas entre si, permitindo uma visualização dinâmica das funcionalidades da aplicação.
+
+[Protótipo Figma](https://www.figma.com/proto/5uEH7tpavXB6I8hzFMa2Fm/Wireframes-AutoCare?node-id=30-1709&node-type=canvas&t=4dhfG5haYGsDH4Uc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A1709)
 
