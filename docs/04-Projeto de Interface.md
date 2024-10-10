@@ -9,16 +9,33 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
+**Resumo do Fluxograma - AutoCare**
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
+O fluxograma da aplicação AutoCare representa a jornada do usuário desde o início da interação até a navegação pelas principais funcionalidades do sistema. O fluxo é dividido em etapas que guiam o usuário através do processo de login, cadastro e acesso às diferentes seções da aplicação, como a Home (Dashboard), veículos, motoristas, perfil e configurações.
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+### Principais Etapas do Fluxograma:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
+1. **Início:** O usuário é questionado sobre a existência de uma conta, podendo optar entre o login ou o cadastro.
+   
+2. **Login e Cadastro:** Ambas as etapas permitem ao usuário acessar a aplicação, com verificações para garantir a validade das credenciais ou dos dados de cadastro.
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+3. **Home (Dashboard):** Uma vez autenticado, o usuário é direcionado para a tela principal, onde pode visualizar informações resumidas e acessar diferentes funcionalidades.
+
+4. **Funcionalidades:** O fluxograma detalha como o usuário pode navegar entre as seções de veículos e motoristas, assim como editar informações pessoais e gerenciar configurações do sistema.
+
+5. **Logout:** Ao finalizar sua sessão, o usuário tem a opção de se desconectar, retornando à tela de login.
+
+Este diagrama de fluxo é uma ferramenta essencial para entender e planejar a interação do usuário com a interface do AutoCare, permitindo um design mais intuitivo e eficiente das funcionalidades da aplicação.
+
+<br>
+
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2adab588-4213-42ce-b18f-ea449a6c1301" alt="Fluxograma do Usuário - AutoCare">
+</div>
+
+***Observação: Para melhor visualização, recomendamos que o diagrama acima seja aberto em uma nova guia***
+
 
 ## Wireframes AutoCare
 
