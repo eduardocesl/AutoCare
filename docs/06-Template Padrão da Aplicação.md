@@ -1,8 +1,8 @@
 # Template Padrão da Aplicação
 
 Layout padrão das aplicações web e mobile que serão utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/KA2XHrx75hItIYfIeC2dgV/Wireframes-%26-Mockups?node-id=6-297&embed-host=share" allowfullscreen></iframe>
-![Template Padrão](https://github.com/user-attachments/assets/986c7e4c-1421-4176-bd58-08ab93e4c386)
+
+![Template Padrão](https://github.com/user-attachments/assets/7ec94cbd-4be7-46d2-8439-01125cc429b9)
 
 
 > **Links Úteis**:
