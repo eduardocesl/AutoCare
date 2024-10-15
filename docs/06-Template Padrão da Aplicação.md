@@ -4,8 +4,19 @@ Layout padrão das aplicações web e mobile que serão utilizado em todas as p�
 
 ![Template Padrão](https://github.com/user-attachments/assets/7ec94cbd-4be7-46d2-8439-01125cc429b9)
 
+Link FIGMA  para Template Padrão:
+https://www.figma.com/design/KA2XHrx75hItIYfIeC2dgV/Wireframes-%26-Mockups?node-id=6-298&m=dev&t=0qW8e5ZWqfhdtxM9-1
 
-CSS Padrão da aplicação
+# CSS Padrão da aplicação
+![CssTemplatePadrão](https://github.com/user-attachments/assets/d91a6eda-09c5-4adc-a130-94a6e70737a8)
+![CssTemplatePadrão_2](https://github.com/user-attachments/assets/8eb7b2ed-ae06-47f6-94a0-1591db6d53db)
+
+
+
+
+
+
+
 
 > **Links Úteis**:
 >
