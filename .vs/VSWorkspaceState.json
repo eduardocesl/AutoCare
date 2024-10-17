@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\autocare.api",
+    "\\src\\autocare.api\\middlewares",
+    "\\src\\autocare.api\\routes"
   ],
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum Status {
+  ATIVO
+  INATIVO
+}
+
+model Usuarios {
+  id             String       @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  email          String       @unique
+  senha          String
+  motoristas     Motoristas[] @relation("UsuarioMotoristas")
+  veiculos       Veiculos[]   @relation("UsuarioVeiculos")
+  criadoEm       DateTime     @default(now())
+  atualizadoEm   DateTime     @updatedAt
+}
+
+model Motoristas {
+  id             String       @id @default(auto()) @map("_id") @db.ObjectId
+  nome           String
+  cnh            String       @unique
+  telefone       String?
+  dataNascimento DateTime?
+  status         Status       @default(ATIVO)
+  criadoEm       DateTime     @default(now())
+  atualizadoEm   DateTime     @updatedAt
+  usuarioId      String?       @db.ObjectId
+  usuario        Usuarios?     @relation("UsuarioMotoristas", fields: [usuarioId], references: [id])
+}
+
+model Veiculos {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  placa          String   @unique
+  marca          String
+  modelo         String
+  anoFabricacao  Int
+  anoModelo      Int
+  cor            String
+  criadoEm       DateTime @default(now())
+  atualizadoEm   DateTime @updatedAt
+  usuarioId      String?  @db.ObjectId
+  usuario        Usuarios? @relation("UsuarioVeiculos", fields: [usuarioId], references: [id])
+}

@@ -16,129 +16,99 @@ A arquitetura do Software será feita através dos seguintes termos:
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+<p align="center">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/91ae7d71-dd1a-49b7-ac3f-53872d3ff239" alt="diagrama de classes (2)">
+  <br><br>
+</p>
+
 
 ## Documentação do Banco de Dados MongoDB
 
 Este documento descreve a estrutura e o esquema do banco de dados não relacional utilizado por nosso projeto, baseado em MongoDB. O MongoDB é um banco de dados NoSQL que armazena dados em documentos JSON (ou BSON, internamente), permitindo uma estrutura flexível e escalável para armazenar e consultar dados.
 
 ## Esquema do Banco de Dados
-### Coleção: users
+
+### Collection: Usuários
 Armazena as informações dos usuários do sistema.
 
 Estrutura do Documento
 
 ```Json
 {
-    "_id": "ObjectId('5f7e1bbf9b2a4f1a9c38b9a1')",
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "passwordHash": "hash_da_senha",
-    "roles": ["admin", "user"],
-    "createdAt": "2024-08-29T10:00:00Z",
-    "updatedAt": "2024-08-29T12:00:00Z"
+  "id":             "ObjectId('66f98b0bcc04dafccf46435b')",
+  "name":           "Apollo Lima",
+  "email":          "apollo.lima@exemplo.com",
+  "senha":          "hash_da_senha",
+  "criadoEm":       "2024-09-29T10:00:00Z",
+  "atualizadoEm":   "2024-09-29T12:00:00Z"
 }
+
 ```
 
 #### Descrição dos Campos
-> - <strong>_id:</strong> Identificador único do usuário gerado automaticamente pelo MongoDB.
+> - <strong>id:</strong> Identificador único do usuário gerado automaticamente pelo MongoDB.
 > - <strong>name:</strong> Nome completo do usuário.
 > - <strong>email:</strong> Endereço de email do usuário.
-> - <strong>passwordHash:</strong> Hash da senha do usuário.
-> - <strong>roles:</strong> Lista de papéis atribuídos ao usuário (por exemplo, admin, user).
+> - <strong>senha:</strong> Hash da senha do usuário.
 > - <strong>createdAt:</strong> Data e hora de criação do usuário.
 > - <strong>updatedAt:</strong> Data e hora da última atualização dos dados do usuário.
 
-### Coleção: products
-Armazena as informações dos produtos disponíveis no sistema.
+### Coleção: Veículos
+Armazena as informações dos veículos cadastrados pelo usuário.
 
 ```Json
 {
-    "_id": "ObjectId('5f7e1ccf9b2a4f1a9c38b9a2')",
-    "name": "Produto Exemplo",
-    "description": "Descrição detalhada do produto.",
-    "price": 99.99,
-    "category": "Categoria Exemplo",
-    "stock": 100,
-    "createdAt": "2024-08-29T10:30:00Z",
-    "updatedAt": "2024-08-29T11:30:00Z"
+  "id": "ObjectId('66f98c02cc04dafccf46435d')",
+  "placa": "RUO8E21",
+  "marca": "Marca do veículo",
+  "modelo": "Modelo do veículo",
+  "anoFabricacao": 2024,
+  "anoModelo": 2025,
+  "cor": "Cor do veículo",
+  "criadoEm": "2024-09-29T17:18:58.687Z",
+  "atualizadoEm": "2024-09-29T17:18:58.687Z",
+  "usuarioId": "66f98b0bcc04dafccf46435b"
 }
+
 ```
 
 #### Descrição dos Campos
-> - <strong>_id:</strong> Identificador único do usuário gerado automaticamente pelo MongoDB.
-> - <strong>name:</strong> Nome completo do usuário.
-> - <strong>email:</strong> Endereço de email do usuário.
-> - <strong>passwordHash:</strong> Hash da senha do usuário.
-> - <strong>roles:</strong> Lista de papéis atribuídos ao usuário (por exemplo, admin, user).
-> - <strong>createdAt:</strong> Data e hora de criação do usuário.
-> - <strong>updatedAt:</strong> Data e hora da última atualização dos dados do usuário.
+> - <strong>id:</strong> Identificador único do usuário gerado automaticamente pelo MongoDB.
+> - <strong>placa:</strong> Placa do veículo cadastrado.
+> - <strong>marca:</strong> Marca do veículo.
+> - <strong>modelo:</strong> Modelo do veículo.
+> - <strong>anoFabricacao:</strong> Ano de fabricação do veículo.
+> - <strong>anoModelo:</strong> Ano do modelo do veículo.
+> - <strong>cor:</strong> Cor do veículo.
+> - <strong>criadoEm:</strong> Data e hora da criação do veículo.
+> - <strong>atualizadoEm:</strong> Data e hora da última atualização dos dados do veículo.
+> - <strong>usuarioId:</strong> ID do usuário associado ao veículo.
 
-### Coleção: products
-Armazena as informações dos produtos disponíveis no sistema.
+
+### Coleção: motoristas
+Armazena as informações dos motoristas cadastrados pelo usuário.
 
 Estrutura do Documento
 
 ```Json
 {
-    "_id": "ObjectId('5f7e1ccf9b2a4f1a9c38b9a2')",
-    "name": "Produto Exemplo",
-    "description": "Descrição detalhada do produto.",
-    "price": 99.99,
-    "category": "Categoria Exemplo",
-    "stock": 100,
-    "createdAt": "2024-08-29T10:30:00Z",
-    "updatedAt": "2024-08-29T11:30:00Z"
+    "nome": "Nome do Motorista",
+    "cnh": "123456789",
+    "telefone": "31999999999",
+    "dataNascimento": "1997-05-13T00:00:00.000Z",
+    "status": "ATIVO",
 }
 ```
 
 #### Descrição dos Campos
-> - <strong>_id:</strong> Identificador único do produto gerado automaticamente pelo MongoDB.
-> - <strong>name:</strong> Nome do produto.
-> - <strong>description:</strong> Descrição detalhada do produto.
-> - <strong>price:</strong> Preço do produto.
-> - <strong>category:</strong> Categoria à qual o produto pertence.
-> - <strong>stock:</strong> Quantidade de produtos em estoque.
-> - <strong>createdAt:</strong> Data e hora de criação do produto.
-> - <strong>updatedAt:</strong> Data e hora da última atualização dos dados do produto.
+> - <strong>nome:</strong> Nome do motorista cadastrado.
+> - <strong>cnh:</strong> Número de CNH do motorista cadastrado.
+> - <strong>telefone:</strong> Telefone de contato do motorista.
+> - <strong>dataNascimento:</strong> Data de nascimento do motorista.
+> - <strong>status:</strong> Status atual do motorista (Ativo ou Inativo).
 
-### Coleção: orders
-Armazena as informações dos pedidos feitos pelos usuários.
-
-Estrutura do Documento
-
-```Json
-{
-    "_id": "ObjectId('5f7e1ddf9b2a4f1a9c38b9a3')",
-    "userId": "ObjectId('5f7e1bbf9b2a4f1a9c38b9a1')",
-    "products": [
-        {
-            "productId": "ObjectId('5f7e1ccf9b2a4f1a9c38b9a2')",
-            "quantity": 2,
-            "price": 99.99
-        }
-    ],
-    "totalPrice": 199.98,
-    "status": "pending",
-    "createdAt": "2024-08-29T11:00:00Z",
-    "updatedAt": "2024-08-29T11:30:00Z"
-}
-```
-
-#### Descrição dos Campos
-> - <strong>_id:</strong> Identificador único do pedido gerado automaticamente pelo MongoDB.
-> - <strong>userId:</strong> Referência ao identificador do usuário que fez o pedido.
-> - <strong>products:</strong> Lista de produtos incluídos no pedido, cada um com:
-> - <strong>productId:</strong> Identificador do produto.
-> - <strong>quantity:</strong> Quantidade do produto pedido.
-> - <strong>price:</strong> Preço unitário do produto no momento do pedido.
-> - <strong>totalPrice:</strong> Preço total do pedido (soma de todos os itens).
-> - <strong>status:</strong> Status atual do pedido (por exemplo, pending, shipped, delivered).
-> - <strong>createdAt:</strong> Data e hora de criação do pedido.
-> - <strong>updatedAt:</strong> Data e hora da última atualização dos dados do pedido.
 
 ### Boas Práticas
 
@@ -148,36 +118,35 @@ Monitoramento e Logs: Utilize ferramentas de monitoramento e logging para acompa
 
 Escalabilidade: Considere estratégias de sharding e replicação para lidar com crescimento do banco de dados e alta disponibilidade.
 
-### Material de Apoio da Etapa
-
-Na etapa 2, em máterial de apoio, estão disponíveis vídeos com a configuração do mongo.db e a utilização com Bson no C#
-
-
-## Modelo ER (Somente se tiver mais de um banco e outro for relacional)
-
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
-## Esquema Relacional (Somente se tiver mais de um banco e outro for relacional)
-
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
-
-## Modelo Físico (Somente se tiver mais de um banco e outro for relacional)
-
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+O projeto **AutoCare** utiliza uma combinação de tecnologias para implementar uma solução eficaz de gestão de veículos. As principais tecnologias e ferramentas utilizadas são:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+- **Node.js**: Usado para o desenvolvimento do backend, proporcionando um ambiente de execução JavaScript eficiente e escalável.
+- **Express.js**: Framework para Node.js que estrutura as rotas da API e facilita a criação de endpoints RESTful.
+- **Prisma**: ORM (Object-Relational Mapping) utilizado para interagir com o banco de dados MongoDB, facilitando consultas e manipulação de dados.
+- **MongoDB Atlas**: Banco de dados NoSQL utilizado para armazenar informações de usuários, veículos e motoristas.
+- **JWT (JSON Web Token)**: Utilizado para autenticação e segurança da comunicação entre cliente e servidor.
+- **Thunder Client (VS Code)**: Ferramenta para realizar testes de requisições HTTP diretamente no VS Code.
+- **VS Code**: IDE principal utilizada para o desenvolvimento, com integração com ferramentas de teste e controle de versão.
+
+### Fluxo de Interação
+
+1. O usuário interage com o sistema por meio de um cliente, enviando uma requisição HTTP (como cadastro de veículo ou login).
+2. A requisição é recebida pela API construída em Node.js e Express.js, onde a autenticação é realizada através de JWT.
+3. A API utiliza Prisma para interagir com o banco de dados MongoDB Atlas, realizando operações como leitura, criação ou atualização de dados.
+4. O sistema processa os dados e retorna a resposta ao cliente, garantindo que o usuário receba a informação solicitada (ex: cadastro de veículo, obtenção de dados ou atualização de registros).
+
+Essa arquitetura garante que a interação entre o cliente e o sistema seja eficiente, segura e escalável.
+
+
+<p align="center">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/d1198503-b0ca-4af8-8c17-003e79810b71" alt="Fluxo">
+  <br><br>
+</p>
+
 
 ## Hospedagem
 
