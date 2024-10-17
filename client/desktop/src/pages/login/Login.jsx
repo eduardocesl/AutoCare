@@ -24,10 +24,10 @@ const Login = () => {
         console.log('Login bem-sucedido', data);
         localStorage.setItem('token', data.token);
         setLoginSucesso(true); // Define login como bem-sucedido
-        setErroLogin(''); // Limpa mensagem de erro, se houver
+        setErroLogin('');
       } else {
         setErroLogin(data.message); // Exibe a mensagem de erro
-        setLoginSucesso(false); // Define login como não bem-sucedido
+        setLoginSucesso(false);
       }
     } catch (error) {
       console.error('Erro na requisição', error);
