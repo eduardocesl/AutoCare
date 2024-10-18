@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import './App.css'
+import './PaginaBase.css'
 
 function PaginaBase() {
 
