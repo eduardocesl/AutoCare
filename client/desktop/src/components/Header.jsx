@@ -1,5 +1,5 @@
 import React from 'react';
-import logoHeader from './assets/LogoAuto_1.png'; // Importe a logo do cabeçalho
+import logoHeader from '../assets/LogoAuto_1.png'; // Importe a logo do cabeçalho
 
 function Header() {
   return (

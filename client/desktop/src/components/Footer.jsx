@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFooter from './assets/LogoAuto_2.png'; // Importe a logo do rodapé
+import logoFooter from '../assets/LogoAuto_2.png'; // Importe a logo do rodapé
 
 function Footer() {
   return (
