@@ -46,8 +46,9 @@ const Login = () => {
 
                     <form className="login-form" onSubmit={handleLogin}>
                         <div className="input-group">
-                            <label>E-mail</label>
+                            <label htmlFor="email">E-mail</label>
                             <input
+                                id="email"
                                 className="login-input"
                                 type="email"
                                 placeholder='E-mail'
@@ -57,8 +58,9 @@ const Login = () => {
                             />
                         </div>
                         <div className="input-group">
-                            <label>Senha</label>
+                            <label htmlFor="senha">Senha</label>
                             <input
+                                id="senha"
                                 type="password"
                                 placeholder='Senha'
                                 value={senha}
