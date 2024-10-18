@@ -30,8 +30,8 @@ const Login = () => {
 
     return (
         <div className="fullscreen-wrapper">
-            <div class="welcome-text">
-                <h1>Bem-vindo de volta ao Auto<span class="highlight">Care</span></h1>
+            <div className="welcome-text">
+                <h1>Bem-vindo de volta ao Auto<span className="highlight">Care</span></h1>
                 <h2>O seu app para gestão de frotas</h2>
             </div>
             <div className="login-container">
@@ -66,7 +66,7 @@ const Login = () => {
                     {/* Adicionei para mostrar mensagens de erro e sucesso */}
                     {loginSucesso && <p style={{ color: 'green' }}>Login realizado com sucesso!</p>}
                     {erroLogin && <p style={{ color: 'red' }}>{erroLogin}</p>}
-                    <p class="signup-text">Ainda não possui uma conta? <a href="#" class="signup-link">Cadastre-se aqui!</a></p>
+                    <p className="signup-text">Ainda não possui uma conta? <a href="#" className="signup-link">Cadastre-se aqui!</a></p>
                 </div>
             </div>
         </div>
