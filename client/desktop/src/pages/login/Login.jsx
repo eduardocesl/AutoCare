@@ -29,39 +29,46 @@ const Login = () => {
     };
 
     return (
-        <div className="login-container">
-            <div className="login-block">
-            <h2 className="login-title">Login</h2>
+        <div className="fullscreen-wrapper">
+            <div class="welcome-text">
+                <h1>Bem-vindo de volta ao Auto<span class="highlight">Care</span></h1>
+                <h2>O seu app para gestão de frotas</h2>
+            </div>
+            <div className="login-container">
+                <div className="login-block">
+                    <h2 className="login-title">Login</h2>
 
-            <form className="login-form" onSubmit={handleLogin}>
-                <div className="input-group">
-                    <label>E-mail</label>
-                    <input
-                        className="login-input"
-                        type="email"
-                        placeholder='E-mail'
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="input-group">
-                    <label>Senha</label>
-                    <input
-                        type="password"
-                        placeholder='Senha'
-                        value={senha}
-                        onChange={(e) => setSenha(e.target.value)}
-                        required
-                    />
-                </div>
-                <button className="login-button" type="submit">LOGIN</button>
-            </form>
+                    <form className="login-form" onSubmit={handleLogin}>
+                        <div className="input-group">
+                            <label>E-mail</label>
+                            <input
+                                className="login-input"
+                                type="email"
+                                placeholder='E-mail'
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="input-group">
+                            <label>Senha</label>
+                            <input
+                                type="password"
+                                placeholder='Senha'
+                                value={senha}
+                                onChange={(e) => setSenha(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <button className="login-button" type="submit">LOGIN</button>
+                    </form>
 
-            {/* Adicionei para mostrar mensagens de erro e sucesso */}
-            {loginSucesso && <p style={{ color: 'green' }}>Login realizado com sucesso!</p>}
-            {erroLogin && <p style={{ color: 'red' }}>{erroLogin}</p>}
-        </div>
+                    {/* Adicionei para mostrar mensagens de erro e sucesso */}
+                    {loginSucesso && <p style={{ color: 'green' }}>Login realizado com sucesso!</p>}
+                    {erroLogin && <p style={{ color: 'red' }}>{erroLogin}</p>}
+                    <p class="signup-text">Ainda não possui uma conta? <a href="#" class="signup-link">Cadastre-se aqui!</a></p>
+                </div>
+            </div>
         </div>
     );
 };
