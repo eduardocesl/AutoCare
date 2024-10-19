@@ -29,6 +29,18 @@ A GIF a seguir ilustra o funcionamento da rota **LOGIN** no arquivo `Usuarios.js
   <img src="https://github.com/user-attachments/assets/43d08e61-106f-4f95-9f77-3b4ae9ba458d" alt="Login - User" width="900">
     <br>
 </p>
+<br>
+
+As duas imagens a seguir, demonstram o teste de render do componente Login com sucesso.
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/59b484a3-355d-4302-a805-bf7a99b065ff" alt="Componente Login" width="500">
+    <br>
+
+Registro de Código de Teste + Registro de Teste com sucesso
+<p align="center">
+<img src="https://github.com/user-attachments/assets/0ce0d016-d580-4421-a3b9-b2ddd95a5f5c" alt="Registro de Código + Registro de Teste">
+<br>
 
 ---
 
