@@ -31,7 +31,12 @@ A GIF a seguir ilustra o funcionamento da rota **LOGIN** no arquivo `Usuarios.js
 </p>
 <br>
 
-As duas imagens a seguir, demonstram o teste de render do componente Login com sucesso.
+Teste Unitário do Componente de Login
+O teste unitário do componente de login do AutoCare verifica se o componente é renderizado corretamente.
+
+Renderização: O teste garante que o componente de login aparece na tela, confirmando que todos os elementos visuais, como campos de entrada e botões, estão presentes e funcionais.
+
+***As duas imagens a seguir, demonstram o teste de render do componente Login com sucesso.***
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/59b484a3-355d-4302-a805-bf7a99b065ff" alt="Componente Login" width="500">
