@@ -16,14 +16,21 @@ Testes de integração ajudam a:
 
 ## Tela Login
 
-Teste de Integração do Componente de Login
+### Teste de Integração do Componente de Login
+
+
 No projeto AutoCare, implementamos um teste de integração para o componente de login utilizando o Vitest e a Testing Library. O objetivo deste teste é garantir que o fluxo de login funcione corretamente, desde a renderização do componente até a submissão do formulário.
 
 O teste é dividido em duas partes principais:
 
-Renderização do Componente: O teste verifica se o componente de login é renderizado corretamente quando utilizado dentro de um MemoryRouter. Essa etapa assegura que todos os elementos visuais esperados, como campos de entrada e o botão de login, estão presentes na tela.
+- Renderização do Componente: 
 
-Login com Sucesso: Nesta etapa, simulamos a interação do usuário com o formulário de login. Utilizamos o método fireEvent para preencher os campos de e-mail e senha, e em seguida, disparamos um evento de clique no botão de login. O teste também mocka a chamada de API utilizando o axios, simulando uma resposta bem-sucedida com um token. Após a submissão do formulário, o teste verifica se a mensagem de sucesso "Login realizado com sucesso!" é exibida na tela, confirmando que o fluxo de login foi completado com êxito.
+
+O teste verifica se o componente de login é renderizado corretamente quando utilizado dentro de um MemoryRouter. Essa etapa assegura que todos os elementos visuais esperados, como campos de entrada e o botão de login, estão presentes na tela.
+
+- Login com Sucesso: 
+
+Nesta etapa, simulamos a interação do usuário com o formulário de login. Utilizamos o método fireEvent para preencher os campos de e-mail e senha, e em seguida, disparamos um evento de clique no botão de login. O teste também mocka a chamada de API utilizando o axios, simulando uma resposta bem-sucedida com um token. Após a submissão do formulário, o teste verifica se a mensagem de sucesso "Login realizado com sucesso!" é exibida na tela, confirmando que o fluxo de login foi completado com êxito.
 
 <br>
 
