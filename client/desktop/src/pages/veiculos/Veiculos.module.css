@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  background-color: red;
+}
+
+.form {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+button {
+  width: 10em;
+  padding: 0.5em;
+  align-self: center;
+}
+
+
+.veiculos {
+  background-color: green;
+  width: 100%;
+}

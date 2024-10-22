@@ -1,28 +1,42 @@
 import { useState } from 'react';
 import axios from 'axios';
 import CardVeiculo from '../../components/CardVeiculo';
+import styles from './Veiculos.module.css';
 
 const Veiculos = () => {
   const [formData, setFormData] = useState({
     placa: '',
     marca: '',
     modelo: '',
-    anoFabricacao: '',
-    anoModelo: '',
+    anoFabricacao: 0,
+    anoModelo: 0,
     cor: ''
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === 'anoFabricacao' || name === 'anoModelo') console.log(typeof value);
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Convertendo anoFabricacao e anoModelo para números
+    const updatedFormData = {
+      ...formData,
+      anoFabricacao: parseInt(formData.anoFabricacao, 10),
+      anoModelo: parseInt(formData.anoModelo, 10)
+    };
+    
+    setFormData(updatedFormData);
 
-  
     try {
-      const response = await axios.post('http://localhost:3000/veiculos', formData);
+      const response = await axios.post('http://localhost:3000/veiculos', updatedFormData, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
+      });
       console.log('Veículo cadastrado com sucesso:', response.data);
     } catch (error) {
       console.error('Erro ao cadastrar o veículo:', error);
@@ -30,14 +44,15 @@ const Veiculos = () => {
   };
 
   return (
-    <div style={{display: 'flex', flexDirection: 'column',gap: 80}}>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.container}>
+      
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="placa">Placa</label>
         <input
           type="text"
           name="placa"
           placeholder="Placa"
-          value={formData.placa}
+          value={formData.placa}  
           onChange={handleChange}
           required
         />
@@ -89,7 +104,9 @@ const Veiculos = () => {
         <button type="submit">Cadastrar Veículo</button>
       </form>
 
-      <CardVeiculo />
+      <div className={styles.veiculos}>
+        <CardVeiculo />
+      </div>
     </div>
   );
 };
