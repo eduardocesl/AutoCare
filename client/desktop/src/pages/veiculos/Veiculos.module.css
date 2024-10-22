@@ -1,17 +1,14 @@
 .container {
   display: flex;
-  background-color: red;
 }
 
 .form {
-  background-color: blue;
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 20em;
-  padding: 0.5em;
+  padding: 1em;
   margin: 0.5em;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 10px;
 }
 
@@ -29,6 +26,5 @@ button {
 
 
 .veiculos {
-  background-color: green;
   width: 100%;
 }

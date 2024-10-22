@@ -20,14 +20,14 @@ const Veiculos = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Convertendo anoFabricacao e anoModelo para números
     const updatedFormData = {
       ...formData,
       anoFabricacao: parseInt(formData.anoFabricacao, 10),
       anoModelo: parseInt(formData.anoModelo, 10)
     };
-    
+
     setFormData(updatedFormData);
 
     try {
@@ -37,6 +37,7 @@ const Veiculos = () => {
         }
       });
       console.log('Veículo cadastrado com sucesso:', response.data);
+      alert('Veículo cadastrado com sucesso!');
     } catch (error) {
       console.error('Erro ao cadastrar o veículo:', error);
     }
@@ -44,14 +45,16 @@ const Veiculos = () => {
 
   return (
     <div className={styles.container}>
-      
+
       <form className={styles.form} onSubmit={handleSubmit}>
+        <h3 style={{alignSelf: "center", marginBottom: "2em"}}>Cadastre um Veículo</h3>
+
         <label htmlFor="placa">Placa</label>
         <input
           type="text"
           name="placa"
           placeholder="Placa"
-          value={formData.placa}  
+          value={formData.placa}
           onChange={handleChange}
           required
         />
