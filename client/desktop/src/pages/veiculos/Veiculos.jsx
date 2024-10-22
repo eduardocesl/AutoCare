@@ -8,14 +8,13 @@ const Veiculos = () => {
     placa: '',
     marca: '',
     modelo: '',
-    anoFabricacao: 0,
-    anoModelo: 0,
+    anoFabricacao: '',
+    anoModelo: '',
     cor: ''
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'anoFabricacao' || name === 'anoModelo') console.log(typeof value);
     setFormData({ ...formData, [name]: value });
   };
 
