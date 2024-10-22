@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -7,6 +8,8 @@ const Login = () => {
     const [senha, setSenha] = useState('');
     const [loginSucesso, setLoginSucesso] = useState(false);
     const [erroLogin, setErroLogin] = useState('');
+
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -21,6 +24,9 @@ const Login = () => {
             localStorage.setItem('token', response.data.token);
             setLoginSucesso(true);
             setErroLogin('');
+
+            navigate('/');
+
         } catch (error) {
             console.error('Erro no login', error);
             setErroLogin(error.response?.data.message || 'Erro no login');
@@ -40,8 +46,9 @@ const Login = () => {
 
                     <form className="login-form" onSubmit={handleLogin}>
                         <div className="input-group">
-                            <label>E-mail</label>
+                            <label htmlFor="email">E-mail</label>
                             <input
+                                id="email"
                                 className="login-input"
                                 type="email"
                                 placeholder='E-mail'
@@ -51,8 +58,9 @@ const Login = () => {
                             />
                         </div>
                         <div className="input-group">
-                            <label>Senha</label>
+                            <label htmlFor="senha">Senha</label>
                             <input
+                                id="senha"
                                 type="password"
                                 placeholder='Senha'
                                 value={senha}
