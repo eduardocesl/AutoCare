@@ -22,6 +22,7 @@ const Login = () => {
 
             console.log('Login bem-sucedido', response.data);
             localStorage.setItem('token', response.data.token);
+            localStorage.setItem('userId', response.data.id);
             setLoginSucesso(true);
             setErroLogin('');
 

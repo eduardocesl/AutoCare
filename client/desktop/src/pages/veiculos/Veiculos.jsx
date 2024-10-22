@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardVeiculo from '../../components/CardVeiculo';
 import styles from './Veiculos.module.css';
 
+
 const Veiculos = () => {
+
   const [formData, setFormData] = useState({
     placa: '',
     marca: '',
@@ -12,24 +14,45 @@ const Veiculos = () => {
     anoModelo: '',
     cor: ''
   });
+  const [veiculos, setVeiculos] = useState([]);
+
+  useEffect(() => {
+    const fetchVeiculos = async () => {
+      try {
+        await axios.get('http://localhost:3000/veiculos', {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}` // Envia o token JWT no cabeçalho
+          }
+        })
+        .then(response => {
+          const userVeiculos = response.data.filter(veiculo => veiculo.usuarioId === localStorage.getItem('userId'));
+          setVeiculos(userVeiculos); // Salva os veículos na state
+        })
+      } catch (error) {
+        console.error('Erro ao buscar veículos:', error);
+      }
+    };
+    fetchVeiculos();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleDelete = (id) => {
+    setVeiculos(veiculos.filter(veiculo => veiculo.id !== id));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Convertendo anoFabricacao e anoModelo para números
     const updatedFormData = {
       ...formData,
       anoFabricacao: parseInt(formData.anoFabricacao, 10),
       anoModelo: parseInt(formData.anoModelo, 10)
     };
-
     setFormData(updatedFormData);
-
     try {
       const response = await axios.post('http://localhost:3000/veiculos', updatedFormData, {
         headers: {
@@ -38,6 +61,7 @@ const Veiculos = () => {
       });
       console.log('Veículo cadastrado com sucesso:', response.data);
       alert('Veículo cadastrado com sucesso!');
+      setVeiculos([...veiculos, response.data]); // Atualiza a lista de veículos
     } catch (error) {
       console.error('Erro ao cadastrar o veículo:', error);
     }
@@ -45,7 +69,6 @@ const Veiculos = () => {
 
   return (
     <div className={styles.container}>
-
       <form className={styles.form} onSubmit={handleSubmit}>
         <h3 style={{alignSelf: "center", marginBottom: "2em"}}>Cadastre um Veículo</h3>
 
@@ -107,7 +130,9 @@ const Veiculos = () => {
       </form>
 
       <div className={styles.veiculos}>
-        <CardVeiculo />
+        {veiculos.map((veiculo) => (
+          <CardVeiculo key={veiculo.id} veiculo={veiculo} onDelete={handleDelete} />
+        ))}
       </div>
     </div>
   );
