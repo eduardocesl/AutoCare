@@ -40,16 +40,23 @@ const Motoristas = () => {
       ...formData,
       dataNascimento: formattedDataNascimento,
     };
+    setFormData(formattedFormData);
+    console.log('formattedFormData:', formattedFormData);
     try {
-      await axios.post('http://localhost:3000/motoristas', formattedFormData);
-      setFormData({ nome: '', cnh: '', telefone: '', dataNascimento: '', status: 'ATIVO' });
+      let response = await axios.post('http://localhost:3000/motoristas', formattedFormData, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
+      });  
+      console.log('Veículo cadastrado com sucesso:', response.data);
+      alert('Veículo cadastrado com sucesso!');
       fetchMotoristas(); // Atualiza a lista após o cadastro
     } catch (error) {
+      alert('Erro ao cadastrar motorista:', error);
       console.error('Erro ao cadastrar motorista:', error);
     }
   };
 
-    // Estilos embutidos para simplificar
     const styles = {
       form: {
         display: 'flex',
@@ -62,10 +69,11 @@ const Motoristas = () => {
         backgroundColor: '#f9f9f9',
       },
       input: {
-        marginBottom: '10px',
+        marginBottom: '15px',
         padding: '10px',
         borderRadius: '4px',
         border: '1px solid #ccc',
+        color: '#777',
       },
       button: {
         padding: '10px',
@@ -76,7 +84,7 @@ const Motoristas = () => {
         cursor: 'pointer',
       },
       select: {
-        marginBottom: '10px',
+        marginBottom: '15px',
         padding: '10px',
         borderRadius: '4px',
         border: '1px solid #ccc',
@@ -84,10 +92,11 @@ const Motoristas = () => {
     }
   return (
     <div>
-      <h1>Cadastro de Motoristas</h1>
 
       {/* Formulário de cadastro */}
       <form style={styles.form} onSubmit={handleSubmit}>
+      <h3 style={{alignSelf: "center", marginBottom: "2em"}}>Cadastro de motoristas</h3>
+      <label>Nome</label>
         <input
           type="text"
           name="nome"
@@ -97,6 +106,7 @@ const Motoristas = () => {
           required
           style={styles.input}
         />
+        <label>CNH</label>
         <input
           type="text"
           name="cnh"
@@ -106,6 +116,7 @@ const Motoristas = () => {
           required
           style={styles.input}
         />
+        <label>Telefone</label>
         <input
           type="text"
           name="telefone"
@@ -115,6 +126,7 @@ const Motoristas = () => {
           required
           style={styles.input}
         />
+        <label>Data de nascimento</label>
         <input
           type="date"
           name="dataNascimento"
@@ -123,6 +135,7 @@ const Motoristas = () => {
           required
           style={styles.input}
         />
+        <label>Status</label>
         <select name="status" value={formData.status} onChange={handleInputChange} style={styles.select}>
           <option value="ATIVO">ATIVO</option>
           <option value="INATIVO">INATIVO</option>
