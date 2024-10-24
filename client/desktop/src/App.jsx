@@ -1,18 +1,19 @@
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
-import Cadastro from './pages/Cadastro/Cadastro'
-import EditarUsuario from './pages/EditarUsuario/EditarUsuario'
+import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
 
 function App() {
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Cadastro/>}/>
-        <Route path="/editar-usuario" element={<EditarUsuario/>}/>
-
-      </Routes>
-    </BrowserRouter>
-  )
+    <div className="app-container">
+      <Header />
+      <Navbar />
+      <MainContent />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
