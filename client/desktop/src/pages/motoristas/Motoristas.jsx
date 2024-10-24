@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Motoristas.css';
 
 const Motoristas = () => {
   const [motoristas, setMotoristas] = useState([]);
@@ -57,45 +58,12 @@ const Motoristas = () => {
     }
   };
 
-    const styles = {
-      form: {
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: '400px',
-        margin: '20px auto',
-        padding: '20px',
-        border: '1px solid #ccc',
-        borderRadius: '8px',
-        backgroundColor: '#f9f9f9',
-      },
-      input: {
-        marginBottom: '15px',
-        padding: '10px',
-        borderRadius: '4px',
-        border: '1px solid #ccc',
-        color: '#777',
-      },
-      button: {
-        padding: '10px',
-        backgroundColor: '#E01B1B',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '4px',
-        cursor: 'pointer',
-      },
-      select: {
-        marginBottom: '15px',
-        padding: '10px',
-        borderRadius: '4px',
-        border: '1px solid #ccc',
-      }
-    }
   return (
     <div>
 
       {/* Formulário de cadastro */}
-      <form style={styles.form} onSubmit={handleSubmit}>
-      <h3 style={{alignSelf: "center", marginBottom: "2em"}}>Cadastro de motoristas</h3>
+      <form onSubmit={handleSubmit}>
+      <h3 style={{alignSelf: "center"}}>Cadastro de motoristas</h3>
       <label>Nome</label>
         <input
           type="text"
@@ -104,7 +72,6 @@ const Motoristas = () => {
           value={formData.nome}
           onChange={handleInputChange}
           required
-          style={styles.input}
         />
         <label>CNH</label>
         <input
@@ -114,7 +81,6 @@ const Motoristas = () => {
           value={formData.cnh}
           onChange={handleInputChange}
           required
-          style={styles.input}
         />
         <label>Telefone</label>
         <input
@@ -124,7 +90,6 @@ const Motoristas = () => {
           value={formData.telefone}
           onChange={handleInputChange}
           required
-          style={styles.input}
         />
         <label>Data de nascimento</label>
         <input
@@ -133,25 +98,27 @@ const Motoristas = () => {
           value={formData.dataNascimento}
           onChange={handleInputChange}
           required
-          style={styles.input}
         />
         <label>Status</label>
-        <select name="status" value={formData.status} onChange={handleInputChange} style={styles.select}>
+        <select name="status" value={formData.status} onChange={handleInputChange}>
           <option value="ATIVO">ATIVO</option>
           <option value="INATIVO">INATIVO</option>
         </select>
-        <button type="submit" style={styles.button}>Cadastrar</button>
+        <button type="submit">Cadastrar</button>
       </form>
 
       {/* Lista de motoristas */}
-      <h2>Lista de Motoristas</h2>
-      <ul>
-        {motoristas.map((motorista) => (
-          <li key={motorista.id}>
-            {motorista.nome} - {motorista.cnh} - {motorista.telefone} - {motorista.status}
-          </li>
-        ))}
-      </ul>
+        <div className="motoristas">
+          {motoristas.map((motorista) => (
+            <div key={motorista.id} className="cards">
+              <h3>{motorista.nome}</h3>
+              <p>CNH: {motorista.cnh}</p>
+              <p>Telefone: {motorista.telefone}</p>
+              <p>Data de nascimento: {motorista.dataNascimento}</p>
+              <p>Status: {motorista.status}</p>
+            </div>
+          ))}
+        </div>
     </div>
   );
 };
