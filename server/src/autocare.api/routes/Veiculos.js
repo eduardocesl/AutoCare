@@ -68,11 +68,11 @@ router.put('/veiculos/:id', auth, async (req, res) => {
 });
 
 // Deletar um veiculo
-router.delete('/veiculo/:id', async (req, res) => {
+router.delete('/veiculos/:id', async (req, res) => {
     try {
         const { id } = req.params;
 
-        const user = await prisma.veiculo.delete({
+        const user = await prisma.veiculos.delete({
             where: { id: id },
         });
 
