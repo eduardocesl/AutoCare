@@ -45,24 +45,35 @@ router.get('/usuarios', async (req, res) => {
 // Atualizar um usuário
 router.put('/usuarios/:id', async (req, res) => {
     try {
-        const { id } = req.params;
-        const { email, name } = req.body; 
+        const token = req.headers.authorization.split(' ')[1];
+        const decodedToken = jwt.verify(token, JWT_SECRET);
+        const userIdFromToken = decodedToken.id;
 
-        const user = await prisma.usuarios.update({
+        const { id } = req.params;
+
+        if (userIdFromToken !== id) {
+            return res.status(403).json({ message: 'Você não tem permissão para atualizar este usuário' });
+        }
+
+        const { email, name, senha } = req.body;
+
+        const updateData = {
+            email,
+            name,
+            ...(senha && { senha: await bcrypt.hash(senha, 10) })
+        };
+
+        await prisma.usuarios.update({
             where: { id: id },
-            data: {
-                email: email,
-                name: name
-            },
+            data: updateData,
         });
 
-        res.status(200).json({ message: 'Usuário atualizado com sucesso', user });
-    } catch (err) {
-        console.error("Erro ao atualizar usuário:", err);
-        res.status(500).json({ message: 'Erro no servidor', error: err.message });
+        res.status(200).json({ message: 'Usuário atualizado com sucesso.' });
+    } catch (error) {
+        console.error('Erro ao atualizar usuário:', error);
+        res.status(500).json({ message: 'Erro ao atualizar usuário.' });
     }
 });
-
 
 // Deletar um usuário
 router.delete('/usuarios/:id', async (req, res) => {
@@ -79,7 +90,6 @@ router.delete('/usuarios/:id', async (req, res) => {
         res.status(500).json({ message: 'Erro no servidor', error: err.message });
     }
 });
-
 
 //Login
 router.post('/login', async (req, res) => {
