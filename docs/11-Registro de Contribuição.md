@@ -6,72 +6,139 @@ Este é um exemplo de documento para a documentação das etapas e contribuiçã
 
 Este documento detalha as etapas e responsabilidades do trabalho em equipe para o desenvolvimento de um projeto. O projeto está dividido em cinco etapas principais, cada uma com suas respectivas tarefas e prazos. Cada membro da equipe é responsável por completar as tarefas atribuídas e colaborar com os demais para garantir o sucesso do projeto.
 
-## Etapa 1: Levantamento
+## Etapa 1: Levantamento <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 40>
+
+
+> Destaco que fizemos a Etapa 1 do Eixo 4 sem a referência do GitHub, devido ao atraso da disponibilidade do repositório aos alunos, por motivos que convinham apenas ao Corpo Docente.
+
+### Prazo
+
+- **Data de conclusão**: 01/08/2024 a 08/09/2024
 
 ### Objetivo
 
 Coletar e documentar todos os requisitos necessários para o desenvolvimento do projeto.
 
-### Tarefas
 
-- **Reunião com stakeholders**: Realizar reuniões com as partes interessadas para entender as necessidades e expectativas.
-- **Levantamento de requisitos**: Documentar os requisitos funcionais e não funcionais do projeto.
-- **Análise de viabilidade**: Avaliar a viabilidade técnica e econômica do projeto.
 
-### Responsáveis
+### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
-- **Analista de Requisitos**: Nome do analista
-- **Gerente de Projeto**: Nome do gerente
+<h3>Tarefas Realizadas</h3>
 
-### Prazo
 
-- **Data de conclusão**: YYYY-MM-DD
+##### Tópico 1 - Documentação de Contexto
+    - Introdução
+    - Definição do Problema
+    - Objetivos
+    - Justificativa
+    - Público-alvo
+
+##### Tópico 2 - Especificação do Projeto
+    - Requisitos Funcionais (com apoio do Matheus)
+    - Requisitos Não-Funcionais
+    - Restrições
+    - Matriz de Rastreabilidade
+    - Indicadores de Desempenho
+
+  ---
+
+
+### Lais Oliveira <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
+<h3>Tarefas Realizadas</h3>
+
 
 ---
 
-## Etapa 2: Desenvolvimento Backend
+
+### Lucas Soares <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
+<h3>Tarefas Realizadas</h3>
+
+
+---
+
+
+### Marco Antônio Gil <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
+<h3>Tarefas Realizadas</h3>
+
+
+---
+
+
+### Matheus <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
+<h3>Tarefas Realizadas</h3>
+
+
+---
+
+---
+
+## Etapa 2: Desenvolvimento Backend <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 40>
+
+### Prazo
+
+- **Data de conclusão**: 09/09/2024 a 06/10/2024
 
 ### Objetivo
 
 Desenvolver a lógica de negócio e os serviços de backend do projeto.
 
-### Tarefas
 
-- **Desenvolvimento da API**: Implementar as APIs necessárias para o funcionamento do sistema.
-- **Gestão de Banco de Dados**: Projetar e implementar o banco de dados.
-- **Testes Unitários**: Criar e executar testes unitários para garantir a qualidade do código backend.
+### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
-### Responsáveis
+<h3>Tarefas Realizadas</h3>
 
-- **Desenvolvedor Backend**: Nome do desenvolvedor
-- **Engenheiro de Dados**: Nome do engenheiro
+##### Tópico 5 - Arquitetura da Solução
+    - Tabela Veículos do Banco de Dados (schema.prisma)
+    - Diagrama de Classes
+    - Esquema do Banco de Dados (Collections, Fluxo de Interação, Tecnologias Utilizadas, etc.)
+
+
+##### Tópico 8 - Registro de Testes Unitários
+    - Rota POST - Veículos (Cadastrar)
+    - Rota GET - Veículos (Retornar Veículos Cadastrados)
+    - Rota PUT - Veículos (Alterar veículos)
+    - Rota GET - Usuários (Retornar Usuários Cadastrados)
+    - Rota PUT - Usuários (Alterar Usuários)
+    - Rota DELETE - Usuários (Excluir Usuários Cadastrados)
+    - Teste Unitário de Componente (Login) - (Realizado com sucesso)
+
+
+  ---
+
+
+
+## Etapa 3: Desenvolvimento Web
 
 ### Prazo
 
-- **Data de conclusão**: YYYY-MM-DD
-
----
-
-## Etapa 3: Desenvolvimento Web
+- **Data de conclusão**: 07/10/2024 a 27/10/2024
 
 ### Objetivo
 
 Desenvolver a interface web do projeto, garantindo uma experiência de usuário eficaz e responsiva.
 
-### Tarefas
+### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
-- **Desenvolvimento Frontend**: Criar a interface de usuário utilizando as tecnologias web escolhidas.
-- **Integração com Backend**: Integrar o frontend com as APIs desenvolvidas na etapa anterior.
-- **Testes de Interface**: Realizar testes de usabilidade e interface para assegurar a qualidade da aplicação web.
+<h3>Tarefas Realizadas</h3>
 
-### Responsáveis
+##### Tópico 3 - Metodologia
+    - Plano de Teste de Usabilidade
 
-- **Desenvolvedor Frontend**: Nome do desenvolvedor
-- **Designer UI/UX**: Nome do designer
+##### Tópico 4 - Projeto de Interface
+    - Diagrama de Fluxo
+    - Wireframes
+    - Protótipo de Fluxo do Usuário (Figma)
 
-### Prazo
+##### Tópico 7 - Programação de Funcionalidade
+    - Tela Login (RF-02)
+    - Testes de Funcionalidade (Login)
 
-- **Data de conclusão**: YYYY-MM-DD
+##### Tópico 8 - Registro de Testes Unitários
+    - Teste Unitário do Componente de Login (Realizado com sucesso)
+
+##### Tópico 9 - Registro de Testes de Integração
+    - Teste de Integração do Componente de Login (Realizado com sucesso)
+
 
 ---
 
