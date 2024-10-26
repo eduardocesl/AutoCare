@@ -104,7 +104,7 @@ Desenvolver a lógica de negócio e os serviços de backend do projeto.
 ##### Tópico 5 - Arquitetura da Solução
     - Tabela Veículos do Banco de Dados (schema.prisma)
     - Diagrama de Classes
-    - Esquema do Banco de Dados (Collections, Fluxo de Interação, Tecnologias Utilizadas, etc.)
+    - Transcrição do Esquema do Banco de Dados (Collections, Fluxo de Interação, Tecnologias Utilizadas, etc.)
 
 
 ##### Tópico 8 - Registro de Testes Unitários
