@@ -42,7 +42,7 @@ Prioridade Alta
 
 ## **Tela de Login (RF-02: Autenticação de Usuário)** <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
-**Descrição do Requisito**![pagbase autocare](https://github.com/user-attachments/assets/75785996-cd00-4f80-b683-e4926d0161e5)
+**Descrição do Requisito**
 
 <br><br>
 Este requisito assegura que a aplicação AutoCare permita ao usuário realizar login para uma experiência personalizada e segura. Após o login, o sistema fornece uma interface individualizada que possibilita o acesso a funcionalidades específicas de cada conta.
