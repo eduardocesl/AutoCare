@@ -19,7 +19,9 @@ Este documento detalha as etapas e responsabilidades do trabalho em equipe para 
 
 Coletar e documentar todos os requisitos necessários para o desenvolvimento do projeto.
 
+<br><br>
 
+## Aluno:
 
 ### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
@@ -39,39 +41,38 @@ Coletar e documentar todos os requisitos necessários para o desenvolvimento do 
     - Restrições
     - Matriz de Rastreabilidade
     - Indicadores de Desempenho
-
+<br><br><br>
   ---
 
 
 ### Lais Oliveira <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 <h3>Tarefas Realizadas</h3>
 
-
+<br><br><br>
 ---
 
 
 ### Lucas Soares <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 <h3>Tarefas Realizadas</h3>
 
-
+<br><br><br>
 ---
 
 
 ### Marco Antônio Gil <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 <h3>Tarefas Realizadas</h3>
 
-
+<br><br><br>
 ---
 
 
 ### Matheus <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 <h3>Tarefas Realizadas</h3>
 
+<br><br><br><br>
+
 
 ---
-
----
-
 ## Etapa 2: Desenvolvimento Backend <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 40>
 
 ### Prazo
@@ -82,6 +83,9 @@ Coletar e documentar todos os requisitos necessários para o desenvolvimento do 
 
 Desenvolver a lógica de negócio e os serviços de backend do projeto.
 
+<br><br>
+
+## Aluno:
 
 ### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
@@ -102,6 +106,7 @@ Desenvolver a lógica de negócio e os serviços de backend do projeto.
     - Rota DELETE - Usuários (Excluir Usuários Cadastrados)
     - Teste Unitário de Componente (Login) - (Realizado com sucesso)
 
+<br><br><br><br>
 
   ---
 
@@ -116,6 +121,10 @@ Desenvolver a lógica de negócio e os serviços de backend do projeto.
 ### Objetivo
 
 Desenvolver a interface web do projeto, garantindo uma experiência de usuário eficaz e responsiva.
+
+<br><br>
+
+## Aluno:
 
 ### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
@@ -140,9 +149,11 @@ Desenvolver a interface web do projeto, garantindo uma experiência de usuário 
     - Teste de Integração do Componente de Login (Realizado com sucesso)
 
 
+<br><br><br><br>
+
 ---
 
-## Etapa 4: Desenvolvimento Mobile
+~~## Etapa 4: Desenvolvimento Mobile~~
 
 ### Objetivo
 
@@ -165,7 +176,7 @@ Desenvolver a aplicação mobile do projeto, adaptando as funcionalidades para d
 
 ---
 
-## Etapa 5: Homologação e Apresentação da Solução Produzida
+~~## Etapa 5: Homologação e Apresentação da Solução Produzida~~
 
 ### Objetivo
 
@@ -192,13 +203,13 @@ Garantir que a solução desenvolvida esteja pronta para produção e apresentar
 
 ### Ferramentas de Comunicação
 
-- **Slack**: Para comunicação diária e rápida.
-- **Trello**: Para gerenciamento de tarefas e acompanhamento do progresso.
+- **Whatsapp**: Para comunicação diária e rápida.
+- **GitHub Projects**: Para gerenciamento de tarefas e acompanhamento do progresso.
 - **GitHub**: Para versionamento de código e revisão de pull requests.
 
 ### Reuniões Regulares
 
-- **Reunião semanal**: Toda segunda-feira às 10h.
+- **Reunião semanal**: Todas as terças-feiras às 18h30.
 - **Reunião de revisão**: Ao final de cada etapa para revisar o progresso e ajustar o plano.
 
 ---
