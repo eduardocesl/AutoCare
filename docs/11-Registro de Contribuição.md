@@ -58,6 +58,10 @@ Coletar e documentar todos os requisitos necessários para o desenvolvimento do 
 ### Lais Oliveira <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 <h3>Tarefas Realizadas</h3>
 
+
+##### Tópico 2 - Especificação do Projeto
+     - Personas
+     - Histórias de Usuários
 <br><br><br>
 ---
 
@@ -119,7 +123,11 @@ Desenvolver a lógica de negócio e os serviços de backend do projeto.
 <br><br><br><br>
 
   ---
+### Lais Oliveira <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
+<h3>Tarefas Realizadas</h3>
 
+
+##### 
 
 
 ## Etapa 3: Desenvolvimento Web
