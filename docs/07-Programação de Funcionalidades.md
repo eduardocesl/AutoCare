@@ -53,8 +53,10 @@ Para verificar o funcionamento do login, siga estas etapas:
 `3.` Após o login, verifique o token JWT gerado no localStorage (ele estará visível nas ferramentas de desenvolvedor do navegador).
 <br><br>
 <h3 align="center">Testes de Login</h3>
-> Importante: As mensagens: "Usuário não encontrado" e "Senha incorreta" são apenas para ilustração da autenticação desenvolvida pelo grupo, e serão substituídas pela mensagem "Usuário ou senha incorretos".
 <div align="center">
+
+
+> Importante: As mensagens: "Usuário não encontrado" e "Senha incorreta" são apenas para ilustração da autenticação desenvolvida pelo grupo, e serão substituídas pela mensagem "Usuário ou senha incorretos".
   
   
 <h3>Erro: Sem dados</h3>
