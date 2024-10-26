@@ -127,7 +127,15 @@ Desenvolver a lógica de negócio e os serviços de backend do projeto.
 <h3>Tarefas Realizadas</h3>
 
 
-##### 
+ ##### Tópico 3 -  Metodologia
+    - Relação de ambiente de trabalho
+    - Controle de versão
+    - Gerenciamento de projeto
+    - Ferramentas
+##### Criação
+    - Rota DELETE - Motoristas
+    
+
 
 
 ## Etapa 3: Desenvolvimento Web
@@ -170,7 +178,24 @@ Desenvolver a interface web do projeto, garantindo uma experiência de usuário 
 <br><br><br><br>
 
 ---
+### Lais Oliveira <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
+<h3>Tarefas Realizadas</h3>
 
+##### Tópico 6 - Template Padrão da Aplicação
+    - Criação de projeto de Template Padrão
+    - Execução de CSS padrão da Aplicação
+    - Layout padrão
+    
+##### Tópico 7 - Programação de funcionalidade
+    - Pagina base
+    - Css padrão
+    - Header
+    - Footer
+    - Navbar
+
+    <br><br><br><br>
+
+---
 ~~## Etapa 4: Desenvolvimento Mobile~~
 
 ### Objetivo
