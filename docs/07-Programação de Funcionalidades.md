@@ -10,23 +10,40 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 ## **Pagina Base - User Menu
 
 Prioridade Alta
+![navbar autocare](https://github.com/user-attachments/assets/2f7ffdbe-9fe2-49ce-89a0-ba0c3dc3d1ec)
 
 ### Especificação Funcional
 - ** Menu funcional**: O menu deve conter botões de acesso às outras funcionalidades.
-- ** Layout Padrão da Aplicação**![footer autocare](https://github.com/user-attachments/assets/21e2f15e-aa3f-4266-a195-f0f89a82c70d)
+- ** Layout Padrão da Aplicação**
+- ![navbar autocare](https://github.com/user-attachments/assets/2f7ffdbe-9fe2-49ce-89a0-ba0c3dc3d1ec)
+
 
 
 ## Artefatos de Código 
-- **Header** ![header autocare](https://github.com/user-attachments/assets/2e02463a-f322-4255-bda9-1658b26991f7)
-- **Footer** ![footer autocare](https://github.com/user-attachments/assets/21e2f15e-aa3f-4266-a195-f0f89a82c70d)
-- **UserMenu** ![footer autocare](https://github.com/user-attachments/assets/792af5dc-f55f-4acf-9716-ba4a5ac82f47)
+- **Header**
+- ![header autocare](https://github.com/user-attachments/assets/2e02463a-f322-4255-bda9-1658b26991f7)
+- **Footer**
+-  ![footer autocare](https://github.com/user-attachments/assets/21e2f15e-aa3f-4266-a195-f0f89a82c70d)
+- **UserMenu**
+  ![usermenu autocare](https://github.com/user-attachments/assets/90102af3-bb1c-4610-abaa-71b5cd875626)
+
+
+  
+**Pagina Base Auto Care**
+- Localização: `src\components\UserMenu`
+   - Descrição: Componente base para inicio de experiencia de usuario já logado.Deve levar o usuário as outras paginas.
+     
+<h3 align="center">Capturas de Tela</h3>
+
+![pagbase autocare](https://github.com/user-attachments/assets/75785996-cd00-4f80-b683-e4926d0161e5)
 
 
 
 
 ## **Tela de Login (RF-02: Autenticação de Usuário)** <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
-**Descrição do Requisito**
+**Descrição do Requisito**![pagbase autocare](https://github.com/user-attachments/assets/75785996-cd00-4f80-b683-e4926d0161e5)
+
 <br><br>
 Este requisito assegura que a aplicação AutoCare permita ao usuário realizar login para uma experiência personalizada e segura. Após o login, o sistema fornece uma interface individualizada que possibilita o acesso a funcionalidades específicas de cada conta.
 
