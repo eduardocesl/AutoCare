@@ -7,6 +7,23 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 
 # Programação e Teste de Funcionalidade: <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 50>
 
+## **Pagina Base - User Menu
+
+Prioridade Alta
+
+### Especificação Funcional
+- ** Menu funcional**: O menu deve conter botões de acesso às outras funcionalidades.
+- ** Layout Padrão da Aplicação**![footer autocare](https://github.com/user-attachments/assets/21e2f15e-aa3f-4266-a195-f0f89a82c70d)
+
+
+## Artefatos de Código 
+- **Header** ![header autocare](https://github.com/user-attachments/assets/2e02463a-f322-4255-bda9-1658b26991f7)
+- **Footer** ![footer autocare](https://github.com/user-attachments/assets/21e2f15e-aa3f-4266-a195-f0f89a82c70d)
+- **UserMenu** ![footer autocare](https://github.com/user-attachments/assets/792af5dc-f55f-4acf-9716-ba4a5ac82f47)
+
+
+
+
 ## **Tela de Login (RF-02: Autenticação de Usuário)** <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
 **Descrição do Requisito**
