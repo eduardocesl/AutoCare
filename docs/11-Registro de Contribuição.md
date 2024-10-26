@@ -6,6 +6,12 @@ Este é um exemplo de documento para a documentação das etapas e contribuiçã
 
 Este documento detalha as etapas e responsabilidades do trabalho em equipe para o desenvolvimento de um projeto. O projeto está dividido em cinco etapas principais, cada uma com suas respectivas tarefas e prazos. Cada membro da equipe é responsável por completar as tarefas atribuídas e colaborar com os demais para garantir o sucesso do projeto.
 
+---
+
+### Link para acesso ao GitHub Projects da equipe de desenvolvimento: https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1546
+
+---
+
 ## Etapa 1: Levantamento <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 40>
 
 
