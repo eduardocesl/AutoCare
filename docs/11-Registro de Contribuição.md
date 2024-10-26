@@ -10,6 +10,8 @@ Este documento detalha as etapas e responsabilidades do trabalho em equipe para 
 
 ### Link para acesso ao GitHub Projects da equipe de desenvolvimento: 
 
+Nele fazemos o controle e a gestão das tarefas realizadas pelos membros do grupo.
+
         https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1546
 
 ---
