@@ -20,7 +20,7 @@ function Cadastro() {
                 senha: senhaRef.current.value
             });
             alert("Usuário cadastrado");
-            navigate('/login'); // Redireciona para a página de login
+            navigate('/'); // Redireciona para a página de login
         } catch (err) {
             alert("Erro ao cadastrar usuário");
         }
@@ -39,7 +39,7 @@ function Cadastro() {
                 <input ref={emailRef} placeholder="E-mail" type="email" className={styles.cadastroInput} />
                 <input ref={senhaRef} placeholder="Senha" type="password" className={styles.cadastroInput} />
                 <button className={styles.cadastroButton}>Cadastrar</button>
-                <Link to="/login" className={styles.loginLink}>Já tem uma conta? Faça login</Link>
+                <Link to="/" className={styles.loginLink}>Já tem uma conta? Faça login</Link>
             </form>
         </div>
     );

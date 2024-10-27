@@ -26,7 +26,7 @@ const Login = () => {
             setLoginSucesso(true);
             setErroLogin('');
 
-            navigate('/');
+            navigate('/app');
 
         } catch (error) {
             console.error('Erro no login', error);
@@ -75,7 +75,7 @@ const Login = () => {
                     {/* Adicionei para mostrar mensagens de erro e sucesso */}
                     {loginSucesso && <p style={{ color: 'green' }}>Login realizado com sucesso!</p>}
                     {erroLogin && <p style={{ color: 'red' }}>{erroLogin}</p>}
-                    <p className="signup-text">Ainda não possui uma conta? <a href="#" className="signup-link">Cadastre-se aqui!</a></p>
+                    <p className="signup-text">Ainda não possui uma conta? <a href="/cadastro" className="signup-link">Cadastre-se aqui!</a></p>
                 </div>
             </div>
         </div>

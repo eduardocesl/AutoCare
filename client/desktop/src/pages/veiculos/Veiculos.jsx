@@ -94,7 +94,7 @@ const Veiculos = () => {
         <input
           type="text"
           name="modelo"
-          placeholder="Modelo"
+          placeholder="Model do Veículo"
           value={formData.modelo}
           onChange={handleChange}
           required
