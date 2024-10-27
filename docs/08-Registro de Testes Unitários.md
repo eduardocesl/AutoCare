@@ -1,4 +1,4 @@
-# Testes de Rota do Backend
+f# Testes de Rota do Backend
 
 ## Teste da Rota "CREATE - Usuários"
 
@@ -111,20 +111,13 @@ A GIF a seguir ilustra o teste da rota **EDIT** no arquivo `Veiculos.js`. Esta r
 
 ---
 
-# Testes Unitários no Backend
+# Testes Unitários no FrontEnd
 
-## O que são Testes Unitários?
+## Teste de Renderização de Veículos
 
-Testes unitários são testes automatizados escritos e executados para garantir que pequenas partes individuais do código (unidades) funcionem conforme esperado. No contexto do desenvolvimento backend, isso geralmente significa testar funções, métodos, ou classes de maneira isolada, sem dependências externas como bancos de dados ou serviços web.
+O seguinte teste unitário confere se o componente de Veículos foi renderizado normalmente na pagina. Teste feito utilizando react-testing-library com vitest.
 
-## Por que são Importantes?
-
-Testes unitários ajudam a:
-
-- Identificar problemas de maneira precoce no ciclo de desenvolvimento.
-- Garantir que o código continue funcionando após alterações (regressões).
-- Facilitar o processo de refatoração.
-- Melhorar a confiabilidade e a qualidade do software.
+![Teste Unitário](image.png)
 
 ## Configuração do Ambiente
 

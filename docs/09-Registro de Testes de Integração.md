@@ -37,6 +37,10 @@ Nesta etapa, simulamos a interação do usuário com o formulário de login. Uti
 ![Teste de Integração - Login com sucesso](https://github.com/user-attachments/assets/0e9b93a2-f922-4612-aec1-2d9aeb6915ad)
 
 
+## Tela de Veiculos
+### Informações são exibidas após a chamada
+Confere se as informações solicitadas são exibidas na tela após o usuário fazer a chamada para a API.  Teste feito com react-testing-library com vitest
+![Integração](image-1.png)
 ## Configuração do Ambiente
 
 Para começar a escrever testes de integração em um projeto backend utilizando C#, siga os passos abaixo:
