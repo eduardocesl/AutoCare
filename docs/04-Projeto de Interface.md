@@ -37,7 +37,7 @@ Este diagrama de fluxo é uma ferramenta essencial para entender e planejar a in
 ***Observação: Para uma melhor visualização, recomendamos que o diagrama acima seja aberto em uma nova guia. Além disso, incluímos ao final desta página um link que direciona para o protótipo interativo do fluxo do usuário, desenvolvido no Figma.***
 
 
-## Wireframes AutoCare
+## Wireframes AutoCare - Web
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/31e40d96-23c1-4684-b863-6a8fd2db1af8" alt="Login" width="720">
@@ -93,9 +93,67 @@ Este diagrama de fluxo é uma ferramenta essencial para entender e planejar a in
 </div>
 <br><br>
 
-### Protótipo das wireframes
+## Wireframes AutoCare - Mobile
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/94ed1eb4-2d2b-40c6-995a-61c1d1bd1c02" alt="Login" width="30%">
+ 
+<img src="https://github.com/user-attachments/assets/2d10d8c0-21b7-4a4a-aa7d-9fb0e809710a" alt="Cadastro" width="30%">
+
+</div>
+
+    Imagem 1: Login; 
+    Imagem 2: Cadastro; 
+
+<br><br>
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/125d542d-6971-4b73-af1a-9e52a23df491" alt="Perfil" width="30%">
+
+<img src="https://github.com/user-attachments/assets/9c33f8a1-4954-471a-927d-4ecd83faea94" alt="Editar usuário" width="30%">
+
+</div>
+
+    Imagem 3: Perfil;
+    Imagem 4: Editar usuário;
+
+<br><br>
+
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/443bca0f-f63e-4ef2-8bea-b427d1d95e1c" alt="Veículos" width="30%">
+
+<img src="https://github.com/user-attachments/assets/d5aa21d9-7756-4e83-a9a4-16cfd60b6157" alt="Cadastrar veículo" width="30%">
+
+</div>
+
+    Imagem 5: Veículos;
+    Imagem 6: Cadastrar veículo;
+
+<br><br>
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/12124bf0-52ee-4811-892c-c12f25d3327e" alt="Motoristas" width="30%">
+
+<img src="https://github.com/user-attachments/assets/11cd1057-b20f-4892-9205-0d7a3f308a93" alt="Cadastrar motorista" width="30%">
+
+</div>
+
+    Imagem 7: Motoristas;
+    Imagem 8: Cadastrar motorista;
+
+
+<br><br>
+
+### Protótipos das wireframes Web e Mobile
 
 Este protótipo interativo foi desenvolvido no Figma e apresenta as wireframes do AutoCare conectadas entre si, permitindo uma visualização dinâmica das funcionalidades da aplicação.
 
-[Protótipo Figma](https://www.figma.com/proto/5uEH7tpavXB6I8hzFMa2Fm/Wireframes-AutoCare?node-id=30-1709&node-type=canvas&t=4dhfG5haYGsDH4Uc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A1709)
+[Protótipo Web - Figma](https://www.figma.com/proto/5uEH7tpavXB6I8hzFMa2Fm/Wireframes-AutoCare?node-id=30-1709&node-type=canvas&t=4dhfG5haYGsDH4Uc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A1709)
+
+[Protótipo Mobile - Figma](https://www.figma.com/proto/9GAukYlhxEKoZUtzlGnKGH/AutoCare---Mobile-Wireframes?node-id=1-2656&node-type=canvas&t=QPDpWOcEmrwqE5vU-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2656)
 
