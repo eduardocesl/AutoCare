@@ -193,29 +193,39 @@ Desenvolver a interface web do projeto, garantindo uma experiência de usuário 
     - Footer
     - Navbar
 
-    <br><br><br><br>
+
+<br><br><br><br>
 
 ---
-~~## Etapa 4: Desenvolvimento Mobile~~
+
+## Etapa 4: Desenvolvimento Mobile
+
+
+### Prazo
+
+- **Data de conclusão**: 28/10/2024 a 24/11/2024
 
 ### Objetivo
 
 Desenvolver a aplicação mobile do projeto, adaptando as funcionalidades para dispositivos móveis.
 
-### Tarefas
+<br><br>
 
-- **Desenvolvimento Mobile**: Implementar a versão mobile do projeto para Android e iOS.
-- **Integração com Backend**: Garantir que a aplicação mobile se comunique corretamente com o backend.
-- **Testes em Dispositivos**: Realizar testes em diferentes dispositivos móveis para assegurar compatibilidade e desempenho.
+## Aluno:
 
-### Responsáveis
+### Carlos Eduardo Dos Santos Lima <img src=https://github.com/user-attachments/assets/04836943-414b-4c19-8506-c6db35370a23 height = 20>
 
-- **Desenvolvedor Mobile**: Nome do desenvolvedor
-- **QA Mobile**: Nome do engenheiro de qualidade
+<h3>Tarefas Realizadas</h3>
 
-### Prazo
+##### Tópico 4 - Projeto de Interface
 
-- **Data de conclusão**: YYYY-MM-DD
+
+    - Wireframes Mobile
+    - Protótipo de Fluxo do Usuário Mobile (Figma)
+
+
+<br><br><br>
+
 
 ---
 
