@@ -35,7 +35,7 @@ export default function Login({ navigation }) {
         
         navigation.navigate('MainTabs'); // Redirecionamento
       } else {
-        Alert.alert('Erro', data.message || 'Erro ao fazer login.');
+        Alert.alert('Erro', data.message || 'Credenciais inválidas');
       }
     } catch (error) {
       console.error('Erro na requisição:', error);

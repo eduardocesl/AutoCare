@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react-native';
+import { render, fireEvent, waitFor } from '@testing-library/react-native';
 import Login from '../app/screens/Login';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
@@ -9,15 +9,18 @@ const mockNavigate = jest.fn();
 const navigation = { navigate: mockNavigate };
 
 jest.mock('@react-native-async-storage/async-storage'); // Mock do AsyncStorage
-
 jest.spyOn(Alert, 'alert'); // Mock do Alert para verificar chamadas
 
-describe('Login Component', () => {
+// Mock da função fetch para simular a requisição ao backend
+global.fetch = jest.fn();
+
+// Testes Unitários
+describe('Login Mobile - Testes Unitários', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  it('Deve renderizar corretamente o formulario de login', () => {
+  it('Deve renderizar corretamente o formulário de login', () => {
     const { getByPlaceholderText, getByText } = render(<Login navigation={navigation} />);
     
     expect(getByText('Acesse sua conta')).toBeTruthy();
@@ -34,5 +37,54 @@ describe('Login Component', () => {
 
     // Verifica se o alerta foi disparado
     expect(Alert.alert).toHaveBeenCalledWith('Erro', 'Por favor, preencha todos os campos.');
+  });
+});
+
+// Testes de Integração
+describe('Login Mobile - Testes de Integração com Backend', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('Deve realizar login com sucesso e navegar para a tela principal', async () => {
+    // Simula a resposta do backend para sucesso
+    fetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({ token: 'fake-jwt-token' }),
+    });
+
+    const { getByPlaceholderText, getByText } = render(<Login navigation={navigation} />);
+
+    // Preenche os campos do formulário
+    fireEvent.changeText(getByPlaceholderText('Usuário'), 'test@example.com');
+    fireEvent.changeText(getByPlaceholderText('Senha'), 'password123');
+
+    // Pressiona o botão de login
+    fireEvent.press(getByText('Login'));
+
+    // Verifica se a navegação foi chamada após login bem-sucedido
+    await waitFor(() => expect(mockNavigate).toHaveBeenCalledWith('MainTabs'));
+  });
+
+  it('Deve mostrar um alerta para credenciais incorretas', async () => {
+    // Simula uma resposta de erro do backend
+    fetch.mockResolvedValueOnce({
+      ok: false,
+      json: async () => ({ error: 'Credenciais inválidas' }),
+    });
+
+    const { getByPlaceholderText, getByText } = render(<Login navigation={navigation} />);
+
+    // Preenche os campos do formulário
+    fireEvent.changeText(getByPlaceholderText('Usuário'), 'test@example.com');
+    fireEvent.changeText(getByPlaceholderText('Senha'), 'senha_incorreta');
+
+    // Pressiona o botão de login
+    fireEvent.press(getByText('Login'));
+
+    // Verifica se o alerta foi exibido
+    await waitFor(() =>
+      expect(Alert.alert).toHaveBeenCalledWith('Erro', 'Credenciais inválidas')
+    );
   });
 });
