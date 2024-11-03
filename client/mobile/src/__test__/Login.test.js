@@ -21,6 +21,7 @@ describe('Login Mobile - Testes Unitários', () => {
   });
 
   it('Deve renderizar corretamente o formulário de login', () => {
+    // Verifica a renderização do formulário
     const { getByPlaceholderText, getByText } = render(<Login navigation={navigation} />);
     
     expect(getByText('Acesse sua conta')).toBeTruthy();
@@ -30,12 +31,11 @@ describe('Login Mobile - Testes Unitários', () => {
   });
 
   it('Deve mostrar um alerta se os campos obrigatórios não forem preenchidos', async () => {
+    // Clica em login sem preencher os campos
     const { getByText } = render(<Login navigation={navigation} />);
 
-    // Pressiona o botão sem preencher os campos obrigatórios
     fireEvent.press(getByText('Login'));
 
-    // Verifica se o alerta foi disparado
     expect(Alert.alert).toHaveBeenCalledWith('Erro', 'Por favor, preencha todos os campos.');
   });
 });
@@ -55,19 +55,16 @@ describe('Login Mobile - Testes de Integração com Backend', () => {
 
     const { getByPlaceholderText, getByText } = render(<Login navigation={navigation} />);
 
-    // Preenche os campos do formulário
     fireEvent.changeText(getByPlaceholderText('Usuário'), 'test@example.com');
     fireEvent.changeText(getByPlaceholderText('Senha'), 'password123');
 
-    // Pressiona o botão de login
     fireEvent.press(getByText('Login'));
 
-    // Verifica se a navegação foi chamada após login bem-sucedido
     await waitFor(() => expect(mockNavigate).toHaveBeenCalledWith('MainTabs'));
   });
 
   it('Deve mostrar um alerta para credenciais incorretas', async () => {
-    // Simula uma resposta de erro do backend
+    // Simula a resposta do backend para dados inválidos
     fetch.mockResolvedValueOnce({
       ok: false,
       json: async () => ({ error: 'Credenciais inválidas' }),
@@ -75,14 +72,11 @@ describe('Login Mobile - Testes de Integração com Backend', () => {
 
     const { getByPlaceholderText, getByText } = render(<Login navigation={navigation} />);
 
-    // Preenche os campos do formulário
     fireEvent.changeText(getByPlaceholderText('Usuário'), 'test@example.com');
     fireEvent.changeText(getByPlaceholderText('Senha'), 'senha_incorreta');
 
-    // Pressiona o botão de login
     fireEvent.press(getByText('Login'));
 
-    // Verifica se o alerta foi exibido
     await waitFor(() =>
       expect(Alert.alert).toHaveBeenCalledWith('Erro', 'Credenciais inválidas')
     );
