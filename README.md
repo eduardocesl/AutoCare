@@ -19,7 +19,7 @@
 
 ## Integrantes
 
-* Carlos Eduardo Dos Santos Lima
+* Eduardo Lima
 * Lais Barbosa de Oliveira
 * Lucas Oliveira Soares
 * Marco Antonio Gil do Amaral Oliveira
