@@ -15,7 +15,7 @@ export default function Login({ navigation }) {
     }
 
     try {
-      const response = await fetch('http://192.168.15.10:3000/login', { // Caso teste via mobile, substitua a URL 'localhost:3000/login' pelo '<seu-endereço-ip>:3000/login'.
+      const response = await fetch('http://localhost:3000/login', { // Caso teste via mobile, substitua a URL 'localhost:3000/login' pelo '<seu-endereço-ip>:3000/login'.
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
